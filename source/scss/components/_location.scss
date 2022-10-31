@@ -1,0 +1,11 @@
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 8px;
+  color: var(--color-white);
+
+  &__flag {
+    display: flex;
+  }
+}

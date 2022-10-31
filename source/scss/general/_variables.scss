@@ -1,14 +1,16 @@
 :root {
   /* -- Fonts --*/
-  --font-family-pt: "PT-Sans", sans-serif; // var(--font-family-pt);
+  --font-family-karla: "Karla", sans-serif; // var(--font-family-karla);
+  --font-family-gloria: "Gloria Hallelujah", sans-serif; // var(--font-family-gloria);
+  --font-family-hind: "Hind", sans-serif; // var(--font-family-hind);
+  --font-family-gilroy: "Gilroy", sans-serif; // var(--font-family-gilroy);
 
   /* -- Colors --*/
-  --color-main: #313133; // var(--color-main);
+  --color-black: #000000; // var(--color-black);
+  --color-white: #ffffff; // var(--color-white);
   --color-yellow: #FCCE1C; // var(--color-yellow);
-  --color-black: #000000;  // var(--color-black);
-  --color-white: #ffffff;  // var(--color-white);
-  --footer-bg: #F1F1F6; // var(--footer-bg);
-  --input-bg: #DDF3F4; // var(--input-bg);
+
+  --color-border: #EDF3FB; // var(--color-border);
 
 
 }

@@ -4,10 +4,7 @@ body {
   height: 100%;
   width: 100%;
   position: relative;
-  font-family: var(--font-family-pt);
-  font-weight: 400;
-  color: var(--color-main);
-  overflow-x: hidden;
+  font-family: var(--font-family-gilroy);
 }
 
 html {
@@ -22,7 +19,6 @@ html {
   box-sizing: border-box;
 }
 
-
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -34,9 +30,9 @@ a {
   font-style: inherit;
   font-family: inherit;
   text-decoration: none;
-  cursor: pointer;
   margin: 0;
   width: fit-content;
+  cursor: var(--cursor), pointer;
 }
 
 button {
@@ -44,11 +40,11 @@ button {
   border: none;
   display: inline-block;
   outline: none;
-  cursor: pointer;
   padding: 0;
   margin: 0;
   line-height: initial;
   width: fit-content;
+  cursor: var(--cursor), pointer;
 }
 
 p {
@@ -151,9 +147,9 @@ input[type="number"] {
 }
 
 .container {
-  max-width: 1472px;
+  position: relative;
+  max-width: 1280px;
   width: 100%;
   margin: 0 auto;
-  position: relative;
-  padding: 0 clamp(16px, 3.472vw, 50px);
+  padding: 0 16px;
 }
