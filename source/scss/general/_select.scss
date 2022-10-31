@@ -1,0 +1,11 @@
+.select {
+  position: relative;
+
+  &.is-active {
+    .select__body {
+      visibility: visible;
+      opacity: 1;
+      display: block;
+    }
+  }
+}
