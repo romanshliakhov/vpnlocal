@@ -1,0 +1,23 @@
+.button {
+  padding: 10px 24px;
+  border-radius: 32px;
+  transition: all 0.4s ease;
+
+
+  &--blue {
+    color: var(--color-white);
+    background-color: var(--color-blue);
+
+    &:hover {
+      background-color: rgba(68, 103, 251, 0.8);
+    }
+  }
+
+  &--account {
+    border: 1px solid var(--color-border);
+
+    &:hover {
+      border: 1px solid var(--color-blue);
+    }
+  }
+}

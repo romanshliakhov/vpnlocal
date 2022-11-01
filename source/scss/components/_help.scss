@@ -1,0 +1,21 @@
+.help {
+  display: flex;
+  align-items: center;
+  grid-gap: 5px;
+  margin-right: 6px;
+  color: var(--color-gray);
+  transition: all 0.4s ease;
+
+  svg {
+    fill: var(--color-gray);
+    transition: all 0.4s ease;
+  }
+
+  &:hover {
+    color: var(--color-black);
+
+    svg {
+      fill: var(--color-black);
+    }
+  }
+}
