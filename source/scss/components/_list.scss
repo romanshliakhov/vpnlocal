@@ -1,0 +1,14 @@
+.list {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #141518;
+  border-radius: 20px;
+  transition: all 0.4s ease;
+
+  &:hover {
+    color: var(--color-blue);
+  }
+}
