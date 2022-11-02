@@ -100,19 +100,120 @@
           </ul>
         </nav>
 
-
-
-        <div class="buttons">
-          <button class="button button--blue">Buy</button>
-          <button class="button button--account">My account</button>
+        <div class="footer__btns buttons">
+          <button class="button__buy button">Buy</button>
+          <button class="button__account button__account--footer button">My account</button>
         </div>
       </div>
 
       <div class="footer__bot">
-        <select>
-          <option value="">ENG</option>
-          <option value="">RU</option>
-        </select>
+
+        <div class="lang select">
+            <div class="lang__current select__current">
+              <span class="lang__flag">
+                <picture>
+                  <source type='image/webp' srcset='img/flags/gb.webp'>
+                  <img width='24' height='24' src='img/flags/gb.png' alt='Eng'>
+                </picture>
+              </span>
+
+              <div class="lang__title">English</div>
+            </div>
+
+            <div class="lang__body select__body">
+              <label class="lang__search">
+                <input class="lang__input" type="search" placeholder="Search">
+              </label>
+
+              <ul class="lang__list">
+                <li class="lang__item select__item" data-choice='choosen'>
+                  <span class="lang__flag">
+                    <picture>
+                      <source type='image/webp' srcset='img/flags/gb.webp'>
+                      <img width='24' height='24' src='img/flags/gb.png' alt='English'>
+                    </picture>
+                  </span>
+
+                  <span class="lang__title">English</span>
+                </li>
+                <li class="lang__item select__item" data-choice='choosen'>
+                  <span class="lang__flag">
+                    <picture>
+                      <source type='image/webp' srcset='img/flags/ua.webp'>
+                      <img width='24' height='24' src='img/flags/ua.png' alt='Ukrainian'>
+                    </picture>
+                  </span>
+
+                  <span class="lang__title">Ukrainian</span>
+                </li>
+                <li class="lang__item select__item" data-choice='choosen'>
+                  <span class="lang__flag">
+                    <picture>
+                      <source type='image/webp' srcset='img/flags/at.webp'>
+                      <img width='24' height='24' src='img/flags/at.png' alt='Austrian'>
+                    </picture>
+                  </span>
+
+                  <span class="lang__title">
+                    Austria
+                    <span class="lang__translation-type">Machine translate</span>
+                  </span>
+                </li>
+                <li class="lang__item select__item" data-choice='choosen'>
+                  <span class="lang__flag">
+                    <picture>
+                      <source type='image/webp' srcset='img/flags/bd.webp'>
+                      <img width='24' height='24' src='img/flags/bd.png' alt='Bangladesh'>
+                    </picture>
+                  </span>
+
+                  <span class="lang__title">
+                    Bangladesh
+                    <span class="lang__translation-type">Machine translate</span>
+                  </span>
+                </li>
+                <li class="lang__item select__item" data-choice='choosen'>
+                  <span class="lang__flag">
+                    <picture>
+                      <source type='image/webp' srcset='img/flags/be.webp'>
+                      <img width='24' height='24' src='img/flags/be.png' alt='Belgium'>
+                    </picture>
+                  </span>
+
+                  <span class="lang__title">
+                    Belgium
+                    <span class="lang__translation-type">Machine translate</span>
+                  </span>
+                </li>
+                <li class="lang__item select__item" data-choice='choosen'>
+                  <span class="lang__flag">
+                    <picture>
+                      <source type='image/webp' srcset='img/flags/bg.webp'>
+                      <img width='24' height='24' src='img/flags/bg.png' alt='Bulgaria'>
+                    </picture>
+                  </span>
+
+                  <span class="lang__title">
+                    Bulgaria
+                    <span class="lang__translation-type">Machine translate</span>
+                  </span>
+                </li>
+                <li class="lang__item select__item" data-choice='choosen'>
+                  <span class="lang__flag">
+                    <picture>
+                      <source type='image/webp' srcset='img/flags/cr.webp'>
+                      <img width='24' height='24' src='img/flags/cr.png' alt='Costa Rica'>
+                    </picture>
+                  </span>
+
+                  <span class="lang__title">
+                    Costa Rica
+                    <span class="lang__translation-type">Machine translate</span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+        </div>
 
         <div class="footer__copyright">© Copyright 2022 <span>VPN Local</span> All Rights Reserved</div>
       </div>

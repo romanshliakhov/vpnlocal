@@ -1,0 +1,130 @@
+.lang {
+  position: relative;
+  max-width: 199px;
+  width: 100%;
+
+  &.is-active {
+    .lang__current::before {
+      transform: scale(-1);
+    }
+  }
+
+  &__current {
+    height: 41px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+    padding: 0 10px;
+    background-color: var(--color-white);
+    border-radius: 20px;
+    cursor: var(--cursor), pointer;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: var(--select-dropdown-icon);
+      width: 16px;
+      height: 16px;
+      right: 16px;
+      transition: all 0.4s ease;
+    }
+  }
+
+  &__flag {
+    display: flex;
+    width: 24px;
+    height: 24px;
+
+    picture,
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__translation-type {
+    position: relative;
+    display: flex;
+    padding-left: 14px;
+    color: var(--color-gray);
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: var(--translation-type);
+      width: 12px;
+      height: 12px;
+      left: 0;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 7px;
+    position: absolute;
+    width: 100%;
+    bottom: 100%;
+    margin-bottom: 17px;
+    border-radius: 10px;
+    padding: 16px 10px 0;
+    background-color: var(--color-white);
+    z-index: -1;
+    opacity: 0;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+  }
+
+  &__item {
+    height: 36px;
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+    padding: 0 7px;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+
+    &:hover {
+      background-color: var(--color-alice-blue);
+      cursor: var(--cursor), pointer;
+    }
+  }
+
+  &__search {
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: var(--search-icon);
+      width: 16px;
+      height: 16px;
+      left: 13px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+    }
+  }
+
+  &__input {
+    height: 36px;
+    position: relative;
+    background-color: #F4F8FB;
+    border-radius: 10px;
+    padding-left: 38px;
+
+
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 500;
+      color: var(--color-gray);
+    }
+  }
+}

@@ -10,7 +10,7 @@
 
   &__top {
     display: flex;
-    align-items: baseline;
+    align-items: flex-start;
     justify-content: space-between;
     color: var(--color-white);
   }
@@ -24,8 +24,6 @@
   &__block-title {
     color: var(--color-gray);
   }
-
-
 
   &__downloads-list {
     margin-top: 40px;
@@ -58,8 +56,6 @@
 
   &__apps {
     max-width: 362px;
-    // display: flex;
-    // flex-wrap: wrap;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 16px 58px;
