@@ -53,7 +53,6 @@
   font-weight: 600;
 }
 
-
 .subtitle {
   font-size: 35px;
   line-height: 111%;
@@ -75,4 +74,22 @@
   font-size: 18px;
   line-height: 22px;
   font-weight: 600;
+}
+
+.scan__descr {
+  font-family: var(--font-family-gloria);
+  font-size: 10px;
+  line-height: 115.5%;
+}
+
+.ios__benefits-title {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 600;
+
+  span {
+    font-size: 15px;
+    line-height: 148%;
+    font-weight: 400;
+  }
 }

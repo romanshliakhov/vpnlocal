@@ -7,307 +7,391 @@
       @include('partials/header.html',{})
 
       <main class="main">
-        <div class="container">
-          <div class="ios">
-            <div class="ios__info">
-              <img width="249" height="60px" src="./img/sprite/flexvpn.svg" alt="">
-              <div class="ios__text text">
-                <h1 class="subtitile">Best VPN with fastest <br> servers ever in your life</h1>
-                <p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet ut mattis ullamcorper montes, vestibulum lacinia curabitur bibendum mauris. In quis pretium, blandit egestas urna est, felis.</p>
+        <section class="ios">
+          <div class="container">
+            <div class="ios__wrapp">
+              <div class="ios__info">
+                <div class="ios__logo">
+                  <img width="249" height="60px" src="./img/sprite/flexvpn.svg" alt="Flex VPN">
+                </div>
+
+                <div class="ios__info-text text">
+                  <h1 class="subtitile">Best VPN with fastest <br> servers ever in your life</h1>
+                  <p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet ut mattis ullamcorper montes, vestibulum lacinia curabitur bibendum mauris. In quis pretium, blandit egestas urna est, felis.</p>
+                </div>
+
+                <div class="ios__downloads downloads">
+                  <a class="market" href="#">
+                    <img width='84' height='23' src="../img/apple.svg" alt="Apple Store">
+                  </a>
+                  <div class="scan">
+                    <div class="scan__code">
+                      <picture>
+                        <source type='image/webp' srcset='img/scan-code.webp'>
+                        <img width='92' height='92' src='img/scan-code.png' alt='QR code for scan'>
+                      </picture>
+                    </div>
+                    <p class="scan__descr">Scan to download</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ios__benefits">
+                <div class="ios__benefits-text text">
+                  <h2 class="subtitile">Benefits of Flex VPN</h2>
+                  <p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie aenean fermentum ullamcorper at magna scelerisque proin.</p>
+                </div>
+
+                <ul class="ios__benefits-list">
+                  <li class="ios__benefits-item">
+                    <div class="ios__benefits-title">Быстрый</div>
+
+                  </li>
+                  <li class="ios__benefits-item">
+                    <div class="ios__benefits-image">
+                      <picture>
+                        <source type='image/webp' srcset='img/benefits/planet.webp'>
+                        <img width='413' height='174' src='img/benefits/planet.png' alt='52 location'>
+                      </picture>
+                    </div>
+                    <div class="ios__benefits-title">52 локации</div>
+                  </li>
+                  <li class="ios__benefits-item ios__benefits-item--reverse">
+                    <div class="ios__benefits-image">
+                      <picture>
+                        <source type='image/webp' srcset='img/benefits/bypass.webp'>
+                        <img width='256' height='197' src='img/benefits/bypass.png' alt='avoid blocks'>
+                      </picture>
+                    </div>
+                    <div class="ios__benefits-title">Обход блокировок провайдера</div>
+                  </li>
+                  <li class="ios__benefits-item">
+                    <div class="ios__benefits-image">
+                      <picture>
+                        <source type='image/webp' srcset='img/benefits/free.webp'>
+                        <img width='413' height='174' src='img/benefits/free.png' alt='free version'>
+                      </picture>
+                    </div>
+                    <div class="ios__benefits-title">Бесплатная версияи</div>
+                  </li>
+                  <li class="ios__benefits-item ios__benefits-item--row">
+                    <div class="ios__benefits-image">
+                      <picture>
+                        <source type='image/webp' srcset='img/benefits/chanels.webp'>
+                        <img width='256' height='197' src='img/benefits/chanels.png' alt='avoid chanels blocks'>
+                      </picture>
+                    </div>
+                    <div class="ios__benefits-title">Обход региональных блокировок на сервисах</div>
+                  </li>
+                  <li class="ios__benefits-item">
+                    <div class="ios__benefits-image">
+                      <picture>
+                        <source type='image/webp' srcset='img/benefits/pro.webp'>
+                        <img width='413' height='151' src='img/benefits/pro.png' alt='pro version'>
+                      </picture>
+                    </div>
+                    <div class="ios__benefits-title">Uncrowded PRO Version <span>Some explanation what is it about</span></div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
+        </section>
 
-          <div class="map">
-            <div class="map__text text">
-              <h2 class="subtitle">Моментальное подключение в 1 клик к стране по умолчанию</h2>
-              <p class="descr">Большой выбор серверов в выбранной локации.</p>
-            </div>
+        <section class="map">
+          <div class="container">
+            <div class="map__wrapp">
+              <div class="map__text text">
+                <h2 class="subtitle">Моментальное подключение в 1 клик к стране по умолчанию</h2>
+                <p class="descr">Большой выбор серверов в выбранной локации.</p>
+              </div>
 
-            <div class="map__image">
-              <img width="1240" height="620px" src="./img/map.svg" alt="">
-            </div>
+              <div class="map__image">
+                <img width="1240" height="620px" src="./img/map.svg" alt="">
+              </div>
 
-            <div class="map__countries">
-              <p class="map__countries-text">and 50+ more countries</p>
+              <div class="map__countries">
+                <p class="map__countries-text">and 50+ more countries</p>
 
-              <ul class="map__countries-main">
-                <li class="map__countries-item">
-                  <span class="map__countries-flag">
-                    <picture>
-                      <source type='image/webp' srcset='img/flags/cn.webp'>
-                      <img width='24' height='24' src='img/flags/cn.png' alt='China'>
-                    </picture>
-                  </span>
-                  <p class="map__countries-name">China</p>
-                </li>
-                <li class="map__countries-item">
-                  <span class="map__countries-flag">
-                    <picture>
-                      <source type='image/webp' srcset='img/flags/au.webp'>
-                      <img width='24' height='24' src='img/flags/au.png' alt='Australia'>
-                    </picture>
-                  </span>
-                  <p class="map__countries-name">Australia</p>
-                </li>
-                <li class="map__countries-item">
-                  <span class="map__countries-flag">
-                    <picture>
-                      <source type='image/webp' srcset='img/flags/br.webp'>
-                      <img width='24' height='24' src='img/flags/br.png' alt='Brazil'>
-                    </picture>
-                  </span>
-                  <p class="map__countries-name">Brazil</p>
-                </li>
-                <li class="map__countries-item">
-                  <span class="map__countries-flag">
-                    <picture>
-                      <source type='image/webp' srcset='img/flags/ca.webp'>
-                      <img width='24' height='24' src='img/flags/ca.png' alt='Canada'>
-                    </picture>
-                  </span>
-                  <p class="map__countries-name">Canada</p>
-                </li>
-                <li class="map__countries-item">
-                  <span class="map__countries-flag">
-                    <picture>
-                      <source type='image/webp' srcset='img/flags/fr.webp'>
-                      <img width='24' height='24' src='img/flags/fr.png' alt='France'>
-                    </picture>
-                  </span>
-                  <p class="map__countries-name">France</p>
-                </li>
-                <li class="map__countries-item">
-                  <span class="map__countries-flag">
-                    <picture>
-                      <source type='image/webp' srcset='img/flags/de.webp'>
-                      <img width='24' height='24' src='img/flags/de.png' alt='Germany'>
-                    </picture>
-                  </span>
-                  <p class="map__countries-name">Germany</p>
-                </li>
-              </ul>
+                <ul class="map__countries-main">
+                  <li class="map__countries-item">
+                    <span class="map__countries-flag">
+                      <picture>
+                        <source type='image/webp' srcset='img/flags/cn.webp'>
+                        <img width='24' height='24' src='img/flags/cn.png' alt='China'>
+                      </picture>
+                    </span>
+                    <p class="map__countries-name">China</p>
+                  </li>
+                  <li class="map__countries-item">
+                    <span class="map__countries-flag">
+                      <picture>
+                        <source type='image/webp' srcset='img/flags/au.webp'>
+                        <img width='24' height='24' src='img/flags/au.png' alt='Australia'>
+                      </picture>
+                    </span>
+                    <p class="map__countries-name">Australia</p>
+                  </li>
+                  <li class="map__countries-item">
+                    <span class="map__countries-flag">
+                      <picture>
+                        <source type='image/webp' srcset='img/flags/br.webp'>
+                        <img width='24' height='24' src='img/flags/br.png' alt='Brazil'>
+                      </picture>
+                    </span>
+                    <p class="map__countries-name">Brazil</p>
+                  </li>
+                  <li class="map__countries-item">
+                    <span class="map__countries-flag">
+                      <picture>
+                        <source type='image/webp' srcset='img/flags/ca.webp'>
+                        <img width='24' height='24' src='img/flags/ca.png' alt='Canada'>
+                      </picture>
+                    </span>
+                    <p class="map__countries-name">Canada</p>
+                  </li>
+                  <li class="map__countries-item">
+                    <span class="map__countries-flag">
+                      <picture>
+                        <source type='image/webp' srcset='img/flags/fr.webp'>
+                        <img width='24' height='24' src='img/flags/fr.png' alt='France'>
+                      </picture>
+                    </span>
+                    <p class="map__countries-name">France</p>
+                  </li>
+                  <li class="map__countries-item">
+                    <span class="map__countries-flag">
+                      <picture>
+                        <source type='image/webp' srcset='img/flags/de.webp'>
+                        <img width='24' height='24' src='img/flags/de.png' alt='Germany'>
+                      </picture>
+                    </span>
+                    <p class="map__countries-name">Germany</p>
+                  </li>
+                </ul>
 
-              <ul class="map__countries-more">
-                <li class="map__countries-item">
-                  <span class="map__countries-flag">
-                    <picture>
-                      <source type='image/webp' srcset='img/flags/at.webp'>
-                      <img width='24' height='24' src='img/flags/at.png' alt='Austria'>
-                    </picture>
-                  </span>
-                  <p class="map__countries-name">Austria</p>
-                </li>
-                <li class="map__countries-item">
-                  <span class="map__countries-flag">
-                    <picture>
-                      <source type='image/webp' srcset='img/flags/bd.webp'>
-                      <img width='24' height='24' src='img/flags/bd.png' alt='Bangladesh'>
-                    </picture>
-                  </span>
-                  <p class="map__countries-name">Bangladesh</p>
-                </li>
-                <li class="map__countries-item">
-                  <span class="map__countries-flag">
-                    <picture>
-                      <source type='image/webp' srcset='img/flags/bl.webp'>
-                      <img width='24' height='24' src='img/flags/bl.png' alt='Belarus'>
-                    </picture>
-                  </span>
-                  <p class="map__countries-name">Belarus</p>
-                </li>
-                <li class="map__countries-item">
-                  <span class="map__countries-flag">
-                    <picture>
-                      <source type='image/webp' srcset='img/flags/be.webp'>
-                      <img width='24' height='24' src='img/flags/be.png' alt='Belgium'>
-                    </picture>
-                  </span>
-                  <p class="map__countries-name">Belgium</p>
-                </li>
-                <li class="map__countries-item">
-                  <span class="map__countries-flag">
-                    <picture>
-                      <source type='image/webp' srcset='img/flags/bg.webp'>
-                      <img width='24' height='24' src='img/flags/bg.png' alt='Bulgaria'>
-                    </picture>
-                  </span>
-                  <p class="map__countries-name">Bulgaria</p>
-                </li>
-                <li class="map__countries-item">
-                  <span class="map__countries-flag">
-                    <picture>
-                      <source type='image/webp' srcset='img/flags/cr.webp'>
-                      <img width='24' height='24' src='img/flags/cr.png' alt='Costa Rica'>
-                    </picture>
-                  </span>
-                  <p class="map__countries-name">Costa Rica</p>
-                </li>
-                <li class="map__countries-item">
-                  <span class="map__countries-flag">
-                    <picture>
-                      <source type='image/webp' srcset='img/flags/at.webp'>
-                      <img width='24' height='24' src='img/flags/at.png' alt='Austria'>
-                    </picture>
-                  </span>
-                  <p class="map__countries-name">Austria</p>
-                </li>
-                <li class="map__countries-item">
-                  <span class="map__countries-flag">
-                    <picture>
-                      <source type='image/webp' srcset='img/flags/bd.webp'>
-                      <img width='24' height='24' src='img/flags/bd.png' alt='Bangladesh'>
-                    </picture>
-                  </span>
-                  <p class="map__countries-name">Bangladesh</p>
-                </li>
-                <li class="map__countries-item">
-                  <span class="map__countries-flag">
-                    <picture>
-                      <source type='image/webp' srcset='img/flags/bl.webp'>
-                      <img width='24' height='24' src='img/flags/bl.png' alt='Belarus'>
-                    </picture>
-                  </span>
-                  <p class="map__countries-name">Belarus</p>
-                </li>
-                <li class="map__countries-item">
-                  <span class="map__countries-flag">
-                    <picture>
-                      <source type='image/webp' srcset='img/flags/be.webp'>
-                      <img width='24' height='24' src='img/flags/be.png' alt='Belgium'>
-                    </picture>
-                  </span>
-                  <p class="map__countries-name">Belgium</p>
-                </li>
-                <li class="map__countries-item">
-                  <span class="map__countries-flag">
-                    <picture>
-                      <source type='image/webp' srcset='img/flags/bg.webp'>
-                      <img width='24' height='24' src='img/flags/bg.png' alt='Bulgaria'>
-                    </picture>
-                  </span>
-                  <p class="map__countries-name">Bulgaria</p>
-                </li>
-                <li class="map__countries-item">
-                  <span class="map__countries-flag">
-                    <picture>
-                      <source type='image/webp' srcset='img/flags/cr.webp'>
-                      <img width='24' height='24' src='img/flags/cr.png' alt='Costa Rica'>
-                    </picture>
-                  </span>
-                  <p class="map__countries-name">Costa Rica</p>
-                </li>
-                <li class="map__countries-item">
-                  <span class="map__countries-flag">
-                    <picture>
-                      <source type='image/webp' srcset='img/flags/at.webp'>
-                      <img width='24' height='24' src='img/flags/at.png' alt='Austria'>
-                    </picture>
-                  </span>
-                  <p class="map__countries-name">Austria</p>
-                </li>
-                <li class="map__countries-item">
-                  <span class="map__countries-flag">
-                    <picture>
-                      <source type='image/webp' srcset='img/flags/bd.webp'>
-                      <img width='24' height='24' src='img/flags/bd.png' alt='Bangladesh'>
-                    </picture>
-                  </span>
-                  <p class="map__countries-name">Bangladesh</p>
-                </li>
-                <li class="map__countries-item">
-                  <span class="map__countries-flag">
-                    <picture>
-                      <source type='image/webp' srcset='img/flags/bl.webp'>
-                      <img width='24' height='24' src='img/flags/bl.png' alt='Belarus'>
-                    </picture>
-                  </span>
-                  <p class="map__countries-name">Belarus</p>
-                </li>
-                <li class="map__countries-item">
-                  <span class="map__countries-flag">
-                    <picture>
-                      <source type='image/webp' srcset='img/flags/be.webp'>
-                      <img width='24' height='24' src='img/flags/be.png' alt='Belgium'>
-                    </picture>
-                  </span>
-                  <p class="map__countries-name">Belgium</p>
-                </li>
-                <li class="map__countries-item">
-                  <span class="map__countries-flag">
-                    <picture>
-                      <source type='image/webp' srcset='img/flags/bg.webp'>
-                      <img width='24' height='24' src='img/flags/bg.png' alt='Bulgaria'>
-                    </picture>
-                  </span>
-                  <p class="map__countries-name">Bulgaria</p>
-                </li>
-                <li class="map__countries-item">
-                  <span class="map__countries-flag">
-                    <picture>
-                      <source type='image/webp' srcset='img/flags/cr.webp'>
-                      <img width='24' height='24' src='img/flags/cr.png' alt='Costa Rica'>
-                    </picture>
-                  </span>
-                  <p class="map__countries-name">Costa Rica</p>
-                </li>                <li class="map__countries-item">
-                  <span class="map__countries-flag">
-                    <picture>
-                      <source type='image/webp' srcset='img/flags/at.webp'>
-                      <img width='24' height='24' src='img/flags/at.png' alt='Austria'>
-                    </picture>
-                  </span>
-                  <p class="map__countries-name">Austria</p>
-                </li>
-                <li class="map__countries-item">
-                  <span class="map__countries-flag">
-                    <picture>
-                      <source type='image/webp' srcset='img/flags/bd.webp'>
-                      <img width='24' height='24' src='img/flags/bd.png' alt='Bangladesh'>
-                    </picture>
-                  </span>
-                  <p class="map__countries-name">Bangladesh</p>
-                </li>
-                <li class="map__countries-item">
-                  <span class="map__countries-flag">
-                    <picture>
-                      <source type='image/webp' srcset='img/flags/bl.webp'>
-                      <img width='24' height='24' src='img/flags/bl.png' alt='Belarus'>
-                    </picture>
-                  </span>
-                  <p class="map__countries-name">Belarus</p>
-                </li>
-                <li class="map__countries-item">
-                  <span class="map__countries-flag">
-                    <picture>
-                      <source type='image/webp' srcset='img/flags/be.webp'>
-                      <img width='24' height='24' src='img/flags/be.png' alt='Belgium'>
-                    </picture>
-                  </span>
-                  <p class="map__countries-name">Belgium</p>
-                </li>
-                <li class="map__countries-item">
-                  <span class="map__countries-flag">
-                    <picture>
-                      <source type='image/webp' srcset='img/flags/bg.webp'>
-                      <img width='24' height='24' src='img/flags/bg.png' alt='Bulgaria'>
-                    </picture>
-                  </span>
-                  <p class="map__countries-name">Bulgaria</p>
-                </li>
-                <li class="map__countries-item">
-                  <span class="map__countries-flag">
-                    <picture>
-                      <source type='image/webp' srcset='img/flags/cr.webp'>
-                      <img width='24' height='24' src='img/flags/cr.png' alt='Costa Rica'>
-                    </picture>
-                  </span>
-                  <p class="map__countries-name">Costa Rica</p>
-                </li>
-              </ul>
+                <ul class="map__countries-more">
+                  <li class="map__countries-item">
+                    <span class="map__countries-flag">
+                      <picture>
+                        <source type='image/webp' srcset='img/flags/at.webp'>
+                        <img width='24' height='24' src='img/flags/at.png' alt='Austria'>
+                      </picture>
+                    </span>
+                    <p class="map__countries-name">Austria</p>
+                  </li>
+                  <li class="map__countries-item">
+                    <span class="map__countries-flag">
+                      <picture>
+                        <source type='image/webp' srcset='img/flags/bd.webp'>
+                        <img width='24' height='24' src='img/flags/bd.png' alt='Bangladesh'>
+                      </picture>
+                    </span>
+                    <p class="map__countries-name">Bangladesh</p>
+                  </li>
+                  <li class="map__countries-item">
+                    <span class="map__countries-flag">
+                      <picture>
+                        <source type='image/webp' srcset='img/flags/bl.webp'>
+                        <img width='24' height='24' src='img/flags/bl.png' alt='Belarus'>
+                      </picture>
+                    </span>
+                    <p class="map__countries-name">Belarus</p>
+                  </li>
+                  <li class="map__countries-item">
+                    <span class="map__countries-flag">
+                      <picture>
+                        <source type='image/webp' srcset='img/flags/be.webp'>
+                        <img width='24' height='24' src='img/flags/be.png' alt='Belgium'>
+                      </picture>
+                    </span>
+                    <p class="map__countries-name">Belgium</p>
+                  </li>
+                  <li class="map__countries-item">
+                    <span class="map__countries-flag">
+                      <picture>
+                        <source type='image/webp' srcset='img/flags/bg.webp'>
+                        <img width='24' height='24' src='img/flags/bg.png' alt='Bulgaria'>
+                      </picture>
+                    </span>
+                    <p class="map__countries-name">Bulgaria</p>
+                  </li>
+                  <li class="map__countries-item">
+                    <span class="map__countries-flag">
+                      <picture>
+                        <source type='image/webp' srcset='img/flags/cr.webp'>
+                        <img width='24' height='24' src='img/flags/cr.png' alt='Costa Rica'>
+                      </picture>
+                    </span>
+                    <p class="map__countries-name">Costa Rica</p>
+                  </li>
+                  <li class="map__countries-item">
+                    <span class="map__countries-flag">
+                      <picture>
+                        <source type='image/webp' srcset='img/flags/at.webp'>
+                        <img width='24' height='24' src='img/flags/at.png' alt='Austria'>
+                      </picture>
+                    </span>
+                    <p class="map__countries-name">Austria</p>
+                  </li>
+                  <li class="map__countries-item">
+                    <span class="map__countries-flag">
+                      <picture>
+                        <source type='image/webp' srcset='img/flags/bd.webp'>
+                        <img width='24' height='24' src='img/flags/bd.png' alt='Bangladesh'>
+                      </picture>
+                    </span>
+                    <p class="map__countries-name">Bangladesh</p>
+                  </li>
+                  <li class="map__countries-item">
+                    <span class="map__countries-flag">
+                      <picture>
+                        <source type='image/webp' srcset='img/flags/bl.webp'>
+                        <img width='24' height='24' src='img/flags/bl.png' alt='Belarus'>
+                      </picture>
+                    </span>
+                    <p class="map__countries-name">Belarus</p>
+                  </li>
+                  <li class="map__countries-item">
+                    <span class="map__countries-flag">
+                      <picture>
+                        <source type='image/webp' srcset='img/flags/be.webp'>
+                        <img width='24' height='24' src='img/flags/be.png' alt='Belgium'>
+                      </picture>
+                    </span>
+                    <p class="map__countries-name">Belgium</p>
+                  </li>
+                  <li class="map__countries-item">
+                    <span class="map__countries-flag">
+                      <picture>
+                        <source type='image/webp' srcset='img/flags/bg.webp'>
+                        <img width='24' height='24' src='img/flags/bg.png' alt='Bulgaria'>
+                      </picture>
+                    </span>
+                    <p class="map__countries-name">Bulgaria</p>
+                  </li>
+                  <li class="map__countries-item">
+                    <span class="map__countries-flag">
+                      <picture>
+                        <source type='image/webp' srcset='img/flags/cr.webp'>
+                        <img width='24' height='24' src='img/flags/cr.png' alt='Costa Rica'>
+                      </picture>
+                    </span>
+                    <p class="map__countries-name">Costa Rica</p>
+                  </li>
+                  <li class="map__countries-item">
+                    <span class="map__countries-flag">
+                      <picture>
+                        <source type='image/webp' srcset='img/flags/at.webp'>
+                        <img width='24' height='24' src='img/flags/at.png' alt='Austria'>
+                      </picture>
+                    </span>
+                    <p class="map__countries-name">Austria</p>
+                  </li>
+                  <li class="map__countries-item">
+                    <span class="map__countries-flag">
+                      <picture>
+                        <source type='image/webp' srcset='img/flags/bd.webp'>
+                        <img width='24' height='24' src='img/flags/bd.png' alt='Bangladesh'>
+                      </picture>
+                    </span>
+                    <p class="map__countries-name">Bangladesh</p>
+                  </li>
+                  <li class="map__countries-item">
+                    <span class="map__countries-flag">
+                      <picture>
+                        <source type='image/webp' srcset='img/flags/bl.webp'>
+                        <img width='24' height='24' src='img/flags/bl.png' alt='Belarus'>
+                      </picture>
+                    </span>
+                    <p class="map__countries-name">Belarus</p>
+                  </li>
+                  <li class="map__countries-item">
+                    <span class="map__countries-flag">
+                      <picture>
+                        <source type='image/webp' srcset='img/flags/be.webp'>
+                        <img width='24' height='24' src='img/flags/be.png' alt='Belgium'>
+                      </picture>
+                    </span>
+                    <p class="map__countries-name">Belgium</p>
+                  </li>
+                  <li class="map__countries-item">
+                    <span class="map__countries-flag">
+                      <picture>
+                        <source type='image/webp' srcset='img/flags/bg.webp'>
+                        <img width='24' height='24' src='img/flags/bg.png' alt='Bulgaria'>
+                      </picture>
+                    </span>
+                    <p class="map__countries-name">Bulgaria</p>
+                  </li>
+                  <li class="map__countries-item">
+                    <span class="map__countries-flag">
+                      <picture>
+                        <source type='image/webp' srcset='img/flags/cr.webp'>
+                        <img width='24' height='24' src='img/flags/cr.png' alt='Costa Rica'>
+                      </picture>
+                    </span>
+                    <p class="map__countries-name">Costa Rica</p>
+                  </li>
+                  <li class="map__countries-item">
+                    <span class="map__countries-flag">
+                      <picture>
+                        <source type='image/webp' srcset='img/flags/at.webp'>
+                        <img width='24' height='24' src='img/flags/at.png' alt='Austria'>
+                      </picture>
+                    </span>
+                    <p class="map__countries-name">Austria</p>
+                  </li>
+                  <li class="map__countries-item">
+                    <span class="map__countries-flag">
+                      <picture>
+                        <source type='image/webp' srcset='img/flags/bd.webp'>
+                        <img width='24' height='24' src='img/flags/bd.png' alt='Bangladesh'>
+                      </picture>
+                    </span>
+                    <p class="map__countries-name">Bangladesh</p>
+                  </li>
+                  <li class="map__countries-item">
+                    <span class="map__countries-flag">
+                      <picture>
+                        <source type='image/webp' srcset='img/flags/bl.webp'>
+                        <img width='24' height='24' src='img/flags/bl.png' alt='Belarus'>
+                      </picture>
+                    </span>
+                    <p class="map__countries-name">Belarus</p>
+                  </li>
+                  <li class="map__countries-item">
+                    <span class="map__countries-flag">
+                      <picture>
+                        <source type='image/webp' srcset='img/flags/be.webp'>
+                        <img width='24' height='24' src='img/flags/be.png' alt='Belgium'>
+                      </picture>
+                    </span>
+                    <p class="map__countries-name">Belgium</p>
+                  </li>
+                  <li class="map__countries-item">
+                    <span class="map__countries-flag">
+                      <picture>
+                        <source type='image/webp' srcset='img/flags/bg.webp'>
+                        <img width='24' height='24' src='img/flags/bg.png' alt='Bulgaria'>
+                      </picture>
+                    </span>
+                    <p class="map__countries-name">Bulgaria</p>
+                  </li>
+                  <li class="map__countries-item">
+                    <span class="map__countries-flag">
+                      <picture>
+                        <source type='image/webp' srcset='img/flags/cr.webp'>
+                        <img width='24' height='24' src='img/flags/cr.png' alt='Costa Rica'>
+                      </picture>
+                    </span>
+                    <p class="map__countries-name">Costa Rica</p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
       </main>
 
       @include('partials/footer.html',{})
