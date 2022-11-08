@@ -1,0 +1,142 @@
+.keys {
+  padding-bottom: 13px;
+  background: linear-gradient(180deg, #EDF3FB 0%, rgba(237, 243, 251, 0) 100%);
+
+  &__wrapp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 37px;
+  }
+
+  &__head {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 10px;
+    color: var(--color-black);
+  }
+
+  &__list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+
+  &__item {
+    background-color: var(--color-border);
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    transition: all 0.4s ease;
+
+    &:hover {
+      border: 1px solid transparent;
+      box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.1);
+
+      .keys__item-country {
+        background-color: var(--color-blue);
+        color: var(--color-white);
+      }
+    }
+  }
+
+  &__item-country {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 8px;
+    padding: 32px 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: var(--color-border);
+    transition: all 0.4s ease;
+  }
+
+  &__item-vpns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1px;
+  }
+
+  &__vpn {
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 4px;
+    background-color: var(--color-white);
+  }
+
+  &__item-btns {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-gap: 24px 13px;
+    padding: 17px 16px 24px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top: 1px solid var(--color-border);
+    background-color: var(--color-white);
+  }
+
+  &__download-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 11px 9px 28px;
+    background-color: var(--color-blue);
+    border-radius: 50px;
+    color: var(--color-white);
+
+    &:hover {
+      .keys__code-apk {
+        background-color: var(--color-black);
+
+        svg {
+          fill: var(--color-white);
+        }
+      }
+    }
+  }
+
+  &__code-apk {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white);
+    border-radius: 50px;
+    transition: all 0.4s ease;
+
+    svg {
+      transition: all 0.4s ease;
+      fill: var(--color-black);
+    }
+  }
+
+  &__btn {
+    height: 40px;
+    border: 1px solid #D9D9D9;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+
+    &:hover {
+      border: 1px solid var(--color-blue);
+    }
+
+    &--buy {
+      max-width: 171px;
+      width: 100%;
+    }
+
+    &--apk {
+      max-width: 182px;
+      width: 100%;
+    }
+  }
+
+}
