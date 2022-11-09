@@ -1,0 +1,44 @@
+.info {
+  max-width: 610px;
+  display: flex;
+  flex-direction: column;
+
+  &__logo {
+    display: flex;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    max-width: 522px;
+    margin-bottom: 28px;
+  }
+
+  &__lists {
+    margin-bottom: 45px;
+    display: flex;
+    align-items: center;
+    grid-gap: 40px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 12px;
+  }
+
+  &__list-item {
+    position: relative;
+    padding-left: 20px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: var(--info-list);
+      width: 13px;
+      height: 10px;
+    }
+  }
+}
