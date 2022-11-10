@@ -124,3 +124,42 @@
   line-height: 148%;
   font-weight: 700;
 }
+
+.plans__select {
+  font-family: var(--font-family-karla);
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+}
+
+.plans__season {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.plans__price-current {
+  font-size: 32px;
+  line-height: 39px;
+  font-weight: 600;
+}
+
+.plans__price-default {
+  font-family: var(--font-family-hind);
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+.plans__price-discount {
+  font-family: var(--font-family-karla);
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.apk__keys-input {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+}

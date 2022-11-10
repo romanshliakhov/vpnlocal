@@ -139,4 +139,55 @@
     }
   }
 
+  &__apk-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 16px 16px 24px;
+    grid-gap: 16px 8px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top: 1px solid var(--color-border);
+    background-color: var(--color-white);
+  }
+
+  &__apk-btn {
+    display: flex;
+    align-items: center;
+    grid-gap: 4px;
+    padding: 4px 8px;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+
+    &--android {
+      background-color: var(--color-blue);
+      color: var(--color-white);
+
+      svg {
+        fill: var(--color-white);
+      }
+    }
+
+    &--androidtv {
+      background-color: var(--color-border);
+      color: var(--color-gray);
+
+      svg {
+        fill: var(--color-gray);
+      }
+    }
+
+    &--download {
+      width: 100%;
+      padding: 18px 0;
+      border-radius: 30px;
+      border: 1px solid #D9D9D9;
+
+      &:hover {
+        border: 1px solid var(--color-blue);
+      }
+    }
+  }
+
 }

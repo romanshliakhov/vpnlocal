@@ -1,0 +1,61 @@
+.plans {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-white);
+  box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  z-index: 1;
+
+  &__list {
+    padding: 14px 58px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-right: 1px solid #EDF3FB;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  &__season {
+    margin-bottom: 6px;
+  }
+
+  &__price {
+    position: relative;
+    min-height: 65px;
+    margin-bottom: 12px;
+  }
+
+  &__price-default {
+    text-decoration-line: line-through;
+    color: #8C8D96;
+  }
+
+  &__price-discount {
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%) rotate(-30deg);
+    width: fit-content;
+    padding: 2px 8px;
+    background-color: #E74C3C;
+    border-radius: 10px;
+    color: #fff;
+  }
+
+  &__select {
+    padding: 10px 24px;
+    background-color: var(--color-blue);
+    border-radius: 32px;
+    color: var(--color-white);
+    transition: all 0.4s ease;
+
+    &:hover {
+      background-color: rgba(68, 103, 251, 0.8);
+    }
+  }
+}

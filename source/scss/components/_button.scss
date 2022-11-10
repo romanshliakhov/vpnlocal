@@ -7,6 +7,7 @@
   &__buy {
     color: var(--color-white);
     background-color: var(--color-blue);
+    transition: all 0.4s ease;
 
     &:hover {
       background-color: rgba(68, 103, 251, 0.8);
@@ -15,6 +16,7 @@
 
   &__account,
   &__download {
+    transition: all 0.4s ease;
     border: 1px solid var(--color-border);
 
     &:hover {
