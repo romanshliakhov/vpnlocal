@@ -8,45 +8,49 @@
 
       <main class="main">
         <section class="payment">
-          <div class="contacts__inner">
-            <div class="contacts__text text">
-              <h1 class="contacts__title subtitle">Let us know any questions</h1>
-              <p class="contacts__descr descr">Or manager will answer you in 24 hours</p>
-            </div>
+          <div class="payment__wrapp">
+            <h1 class="payment__title subtitle">Payment details</h1>
+            <div class="payment__inner">
+              <div class="payment__inner-block">
+                <div class="payment__inner-subtitle">Select plan</div>
 
-            <form class="contacts__form">
-              <fieldset class="contacts__form-fieldset">
-                <div class="contacts__form-name">Your email</div>
-                <label class="contacts__form-label">
-                  <input class="contacts__form-input" type="text" placeholder="Type your email">
-                </label>
-              </fieldset>
-
-              <fieldset class="contacts__form-fieldset">
-                <div class="contacts__form-name">Your message</div>
-                <label class="contacts__form-label">
-                  <textarea class="contacts__form-textarea" name="message" placeholder="Type your message here"></textarea>
-                </label>
-              </fieldset>
-
-              <button class="contacts__form-btn">Send</button>
-            </form>
-
-            <div class="contacts__divider"><span>or</span></div>
-
-            <div class="contacts__email">
-              <div class="contacts__email-details">
-                <svg width='24' height='24'>
-                  <use href='img/sprite/sprite.svg#email'></use>
-                </svg>
-                <span>support@vpnlocal.com</span>
-                <button class="contacts__email-copy">
-                  <svg width='16' height='16'>
-                  <use href='img/sprite/sprite.svg#copy'></use>
-                  </svg>
-                </button>
+                <div class="payment__plans">
+                  1 Year
+                </div>
               </div>
-              <a class="contacts__email-connect" href="mailto:support@vpnlocals.com">Написать по Email</a>
+              <div class="payment__inner-block">
+                <div class="payment__inner-subtitle">Select payment method</div>
+
+                <div class="payment__method">
+                  Visa
+                </div>
+              </div>
+              <div class="payment__inner-block">
+                <div class="payment__inner-subtitle">Contact information<span>*</span></div>
+
+                <div class="payment__inner-contacts">
+                  <fieldset class="contacts__form-fieldset">
+                    <div class="contacts__form-name">Your email</div>
+                    <label class="contacts__form-label">
+                      <input class="contacts__form-input" type="text" placeholder="Type your email">
+                    </label>
+                  </fieldset>
+
+                  <div class="payment__contacts-divider">or</div>
+
+                  <fieldset class="contacts__form-fieldset">
+                    <div class="contacts__form-name">Telegram</div>
+                    <label class="contacts__form-label">
+                      <input class="contacts__form-input" type="text" placeholder="Your nickname">
+                    </label>
+                  </fieldset>
+                </div>
+
+
+
+                <p class="payment__contacts-text">We need your contact information for sending Key and links</p>
+                <button class="payment__btn">Go to payment</button>
+              </div>
             </div>
           </div>
         </section>
