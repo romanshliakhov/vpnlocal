@@ -29,6 +29,13 @@
     border-bottom: 1px solid #D9D9D9;
   }
 
+  &__inner-contacts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    grid-gap: 24px;
+  }
+
   &__inner-subtitle {
     span {
       color: #FF0000;
@@ -39,8 +46,6 @@
     margin-bottom: 15px;
     color: #8C8D96;
   }
-
-
 
   &__btn {
     width: 100%;
@@ -54,6 +59,18 @@
     &:hover {
       background-color: rgba(68, 103, 251, 0.8);
     }
+  }
+
+  &__contacts-divider {
+    width: 35px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background-color: #D9D9D9;
+    border-radius: 22px;
+    color: #fff;
   }
 }
 

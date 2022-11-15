@@ -21,9 +21,84 @@
               <div class="payment__inner-block">
                 <div class="payment__inner-subtitle">Select payment method</div>
 
-                <div class="payment__method">
-                  Visa
-                </div>
+                <ul class="payment__method method">
+                  <li class="method__items">
+                    <label class="method__item">
+                      <input class="method__radio" type="radio" name="method">
+                      <span class="method__name">
+                        <svg width='49' height='16'>
+                          <use href='img/sprite/sprite.svg#visa'></use>
+                        </svg>
+                      </span>
+                    </label>
+                  </li>
+
+                  <li class="method__items">
+                    <label class="method__item">
+                      <input class="method__radio" type="radio" name="method">
+                      <span class="method__name">
+                        <svg width='45' height='27'>
+                          <use href='img/sprite/sprite.svg#mastercard'></use>
+                        </svg>
+                      </span>
+                    </label>
+                  </li>
+
+                  <li class="method__items">
+                    <label class="method__item">
+                      <input class="method__radio" type="radio" name="method">
+                      <span class="method__name">
+                        <svg width='51' height='21'>
+                          <use href='img/sprite/sprite.svg#stripe'></use>
+                        </svg>
+                      </span>
+                    </label>
+                  </li>
+
+                  <li class="method__items">
+                    <label class="method__item">
+                      <input class="method__radio" type="radio" name="method">
+                      <span class="method__name">
+                        <svg width='40' height='35'>
+                          <use href='img/sprite/sprite.svg#paypal'></use>
+                        </svg>
+                      </span>
+                    </label>
+                  </li>
+
+                  <li class="method__items">
+                    <label class="method__item">
+                      <input class="method__radio" type="radio" name="method">
+                      <span class="method__name">
+                        <svg width='50' height='21'>
+                          <use href='img/sprite/sprite.svg#googlepay'></use>
+                        </svg>
+                      </span>
+                    </label>
+                  </li>
+
+                  <li class="method__items">
+                    <label class="method__item">
+                      <input class="method__radio" type="radio" name="method">
+                      <span class="method__name">
+                        <svg width='50' height='21'>
+                          <use href='img/sprite/sprite.svg#applepay'></use>
+                        </svg>
+                      </span>
+                    </label>
+                  </li>
+
+                  <li class="method__items">
+                    <label class="method__item">
+                      <input class="method__radio" type="radio" name="method">
+                      <span class="method__name">
+                        <picture>
+                          <img width='57' height='12' src='img/sprite/btc.svg' alt=''>
+                        </picture>
+                      </span>
+                    </label>
+                  </li>
+                </ul>
               </div>
               <div class="payment__inner-block">
                 <div class="payment__inner-subtitle">Contact information<span>*</span></div>
@@ -36,7 +111,7 @@
                     </label>
                   </fieldset>
 
-                  <div class="payment__contacts-divider">or</div>
+                  <div class="payment__contacts-divider"><span>or</span></div>
 
                   <fieldset class="contacts__form-fieldset">
                     <div class="contacts__form-name">Telegram</div>
