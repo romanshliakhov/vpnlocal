@@ -7,9 +7,62 @@
       @include('partials/header.html',{})
 
       <main class="main">
-        <div class="container">
 
-        </div>
+        <section class="benefits">
+          <div class="container">
+            <div class="benefits__wrapp">
+              <div class="benefits__text text">
+                <h2 class="subtitle">Benefits VPN Local</h2>
+                <p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie aenean fermentum ullamcorper at magna scelerisque proin.</p>
+              </div>
+
+              <ul class="benefits__list">
+                <li class="benefits__list-item">
+                  <picture>
+                    <source type='image/webp' srcset='img/benefits/small-planet.webp'>
+                    <img width='24' height='24' src='img/benefits/small-planet.png' alt=''>
+                  </picture>
+                  <div class="benefits__list-descr">Сервера по всему миру</div>
+                </li>
+                <li class="benefits__list-item">
+                  <picture>
+                    <source type='image/webp' srcset='img/benefits/phone.webp'>
+                    <img width='24' height='24' src='img/benefits/phone.png' alt=''>
+                  </picture>
+                  <div class="benefits__list-descr">Фильтр приложений</div>
+                </li>
+                <li class="benefits__list-item">
+                  <picture>
+                    <source type='image/webp' srcset='img/benefits/gear.webp'>
+                    <img width='24' height='24' src='img/benefits/gear.png' alt=''>
+                  </picture>
+                  <div class="benefits__list-descr">Гибкие настройки</div>
+                </li>
+                <li class="benefits__list-item">
+                  <picture>
+                    <source type='image/webp' srcset='img/benefits/small-lightning.webp'>
+                    <img width='24' height='24' src='img/benefits/small-lightning.png' alt=''>
+                  </picture>
+                  <div class="benefits__list-descr">Быстрое подключение с <a href="#">Wireguard</a></div>
+                </li>
+                <li class="benefits__list-item">
+                  <picture>
+                    <source type='image/webp' srcset='img/benefits/isp.webp'>
+                    <img width='24' height='24' src='img/benefits/ips.png' alt=''>
+                  </picture>
+                  <div class="benefits__list-descr">Обход ISP ограничений с <a href="#">Shadowsocks</a></div>
+                </li>
+                <li class="benefits__list-item">
+                  <picture>
+                    <source type='image/webp' srcset='img/benefits/save.webp'>
+                    <img width='24' height='24' src='img/benefits/save.png' alt=''>
+                  </picture>
+                  <div class="benefits__list-descr">Безопасное подключение с <a href="#">OpenVPN 2048 key</a></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </main>
 
       @include('partials/footer.html',{})
