@@ -1,4 +1,5 @@
 .ios {
+  display: flex;
   background: linear-gradient(180deg, rgba(255,255,255,1) 34%, rgba(68,103,251,1) 34%);
 
   &__info {
@@ -137,5 +138,10 @@
       position: absolute;
       right: 0;
     }
+  }
+
+  &__image-bg {
+    position: absolute;
+    right: 30px;
   }
 }
