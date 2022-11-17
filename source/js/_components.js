@@ -6,6 +6,7 @@ import './components/modals.js';
 import './components/smoothScroll.js';
 import './components/replaceEl.js';
 import './components/phoneMask.js';
+import './components/tabs.js';
 
 
 

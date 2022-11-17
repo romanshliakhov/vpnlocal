@@ -7,6 +7,11 @@
       @include('partials/header.html',{})
 
       <main class="main">
+        <section class="hero">
+          <div class="container">
+
+          </div>
+        </section>
 
         <section class="security">
           <div class="container">
@@ -112,6 +117,140 @@
                   </div>
                 </li>
               </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="access">
+
+        </section>
+
+        <section class="devices">
+          <div class="container">
+            <div class="devices__wrapp">
+              <div class="devices__text text">
+                <h2 class="subtitle">Supported Devices</h2>
+                <p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie aenean fermentum ullamcorper at magna scelerisque proin.</p>
+              </div>
+
+              <div class="devices__support tabs">
+                <ul class="devices__support-list">
+                  <li class="devices__support-item tablinks" tabs-btn="ios">
+                    <button class="devices__support-btn" >
+                        <svg width='24' height='24'>
+                          <use href='img/sprite/sprite.svg#ios'></use>
+                        </svg>
+                        <span>iOS</span>
+                    </button>
+                  </li>
+                  <li class="devices__support-item tablinks active" tabs-btn="android">
+                    <button class="devices__support-btn" >
+                        <svg width='24' height='24'>
+                          <use href='img/sprite/sprite.svg#android'></use>
+                        </svg>
+                        <span>Android</span>
+                    </button>
+                  </li>
+                  <li class="devices__support-item tablinks" tabs-btn="androidtv">
+                    <button class="devices__support-btn" >
+                        <svg width='24' height='24'>
+                          <use href='img/sprite/sprite.svg#android-tv'></use>
+                        </svg>
+                        <span>Android TV</span>
+                    </button>
+                  </li>
+                </ul>
+
+                <ul class="devices__content-list">
+                  <li class="devices__content-item">
+                    <div class="devices__content tabcontent" tabs-content="ios">
+                      <div class="devices__content-info">
+                        <div class="devices__content-logo">
+                          <img width="135" height="33" src="./img/flexvpnwhite.svg" alt="">
+                        </div>
+
+                        <div class="devices__content-text text">
+                          <div class="subtitle">iOS</div>
+                          <p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet ut mattis ullamcorper montes, vestibulum lacinia curabitur bibendum mauris. In quis pretium, blandit egestas urna est, felis.</p>
+                        </div>
+
+                        <div class="devices__download">
+                          <div class="devices__content-article">Free app in store</div>
+
+                          <div class="devices__keys-download">
+                            <a class="market" href="#">
+                              <img width='84' height='23' src="../img/apple.svg" alt="Apple Store">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="devices__content-image"></div>
+                    </div>
+                  </li>
+
+                  <li class="devices__content-item">
+                    <div class="devices__content tabcontent active" tabs-content="android">
+                      <div class="devices__content-info">
+                        <div class="devices__content-text text">
+                          <div class="subtitle">Android</div>
+                          <p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet ut mattis ullamcorper montes, vestibulum lacinia curabitur bibendum mauris. In quis pretium, blandit egestas urna est, felis.</p>
+                        </div>
+
+                        <div class="devices__download">
+                          <div class="devices__content-article">Free app in store</div>
+
+                          <div class="devices__keys-download">
+                            <a class="market" href="#">
+                              <img width='85' height='20' src="../img/google.svg" alt="Google Play">
+                            </a>
+                          </div>
+                        </div>
+
+                        <div class="devices__keys">
+                          <div class="devices__content-article">Ключ доступа для .apk</div>
+
+                          <div class="devices__keys-download">
+                            <a class="button__keys-download button" href="#">Download .apk</a>
+                            <a class="button__keys-buy button" href="#">Buy key</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="devices__content-image"></div>
+                    </div>
+                  </li>
+
+                  <li class="devices__content-item">
+                    <div class="devices__content tabcontent" tabs-content="androidtv">
+                      <div class="devices__content-info">
+                        <div class="devices__content-text text">
+                          <div class="subtitle">Android TV</div>
+                          <p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet ut mattis ullamcorper montes, vestibulum lacinia curabitur bibendum mauris. In quis pretium, blandit egestas urna est, felis.</p>
+                        </div>
+
+                        <div class="devices__download">
+                          <div class="devices__content-article">Free app in store</div>
+
+                          <div class="devices__keys-download">
+                            <a class="market" href="#">
+                              <img width='85' height='20' src="../img/google.svg" alt="Google Play">
+                            </a>
+                          </div>
+                        </div>
+
+                        <div class="devices__keys">
+                          <div class="devices__content-article">Ключ доступа для .apk</div>
+
+                          <div class="devices__keys-download">
+                            <a class="button__keys-download button" href="#">Download .apk</a>
+                            <a class="button__keys-buy button" href="#">Buy key</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="devices__content-image"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>

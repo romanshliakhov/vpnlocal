@@ -10,7 +10,7 @@
   height: 36px;
   border-radius: 50%;
   background-color: var(--color-yellow);
-  cursor: pointer;
+  cursor: var(--cursor), pointer;
   z-index: 50;
 
   span {
