@@ -81,28 +81,36 @@
     background-color: var(--color-white);
   }
 
+  &__btn-market {
+    position: relative;
+    display: flex;
+    width: 100%;
+    background-color: var(--color-white);
+    border: 1px solid #D9D9D9;
+    border-radius: 50px;
+    transition: all 0.4s ease;
+
+    &:hover {
+      border: 1ps solid transparent;
+      background-color: var(--color-blue);
+      color: var(--color-white);
+    }
+
+  }
+
   &__download-btn {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 9px 11px 9px 28px;
-    background-color: var(--color-blue);
-    border-radius: 50px;
-    color: var(--color-white);
-
-    &:hover {
-      .keys__code-apk {
-        background-color: var(--color-black);
-
-        svg {
-          fill: var(--color-white);
-        }
-      }
-    }
+    grid-gap: 46px;
+    padding: 19px 28px 18px;
   }
 
   &__code-apk {
+    position: absolute;
+    top: 50%;
+    right: 11px;
+    transform: translateY(-50%);
     width: 38px;
     height: 38px;
     display: flex;
@@ -111,14 +119,28 @@
     background-color: var(--color-white);
     border-radius: 50px;
     transition: all 0.4s ease;
+    border: 1px solid #D9D9D9;
+    z-index: 1;
 
     svg {
       transition: all 0.4s ease;
       fill: var(--color-black);
     }
+
+    &:hover {
+      background-color: var(--color-black);
+      border: 1px solid transparent;
+
+      svg {
+        fill: var(--color-white);
+      }
+    }
   }
 
   &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 40px;
     border: 1px solid #D9D9D9;
     border-radius: 20px;
