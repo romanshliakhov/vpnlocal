@@ -1,9 +1,12 @@
 .hero {
+  position: relative;
   display: flex;
   padding-top: 70px;
 
-  &__gif {
+  &__planet {
     position: absolute;
+    height: 688px;
+    top: 0;
     right: 30px;
   }
 
@@ -92,6 +95,14 @@
   }
 
   &__app-downloads {
+    margin-top: -30px;
+    display: flex;
+    align-items: flex-end;
+    grid-gap: 20px;
+  }
+
+  &__app-links {
+    padding-bottom: 2px;
     display: flex;
     flex-direction: column;
     grid-gap: 8px;
