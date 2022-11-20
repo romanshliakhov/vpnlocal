@@ -35,6 +35,10 @@
     margin-bottom: 16px;
   }
 
+  &__form-label {
+    position: relative;
+  }
+
   &__form-input,
   &__form-textarea {
     padding: 13px 12px;
@@ -52,6 +56,10 @@
     &::placeholder {
       color: #8C8D96;
     }
+  }
+
+  &__form-input--telegram {
+    padding-left: 55px;
   }
 
   &__form-textarea {
@@ -165,6 +173,20 @@
     &:hover {
       border: 1px solid var(--color-blue);
     }
+  }
+
+  &__telegram-start {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+  }
+
+  &__textarea-result {
+    position: absolute;
+    right: 10px;
+    bottom: 6px;
+    color: #8C8D96;
   }
 
 }
