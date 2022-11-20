@@ -5,7 +5,8 @@
 
 
   &__buy,
-  &__activate {
+  &__activate,
+  &__success {
     color: var(--color-white);
     background-color: var(--color-blue);
     transition: all 0.4s ease;
@@ -17,6 +18,11 @@
 
   &__activate {
     padding: 9px 26.5px;
+  }
+
+  &__success {
+    width: 100%;
+    padding: 18px 0;
   }
 
   &__account,

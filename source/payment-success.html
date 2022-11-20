@@ -8,163 +8,43 @@
 
       <main class="main">
         <section class="payment">
-          <div class="payment__wrapp">
+          <div class="payment__wrapp payment__wrapp--success">
             <div class="payment__wrapper">
-              <h1 class="payment__title subtitle">Payment details</h1>
-              <div class="payment__inner">
-                <div class="payment__details">
-                  <svg width='24' height='24'>
-                    <use href='img/sprite/sprite.svg#details-icon'></use>
-                  </svg>
-                  <p class="payment__details-text">На данный момент на сайте доступны ключи для Android версии. Если у вас iOS, то <a href="#">Cкачайте</a> и активируйте подписку в AppStore.</p>
+              <div class="payment__success-head">
+                <svg width='40' height='40'>
+                  <use href='img/sprite/sprite.svg#payment-success'></use>
+                </svg>
+                <div class="payment__success-text"><span>Payment success</span>Great, payment was successfull</div>
+                <div class="payment__success-id">Order id: <span>801221</span></div>
+              </div>
+              <div class="payment__success-info">
+                <div class="payment__success-details">
+                  <div class="payment__activation-period"><span class="payment__period"><span>60</span> Day PRO</span> Starts from the first activation.</div>
+
+                  <div class="payment__activation-code"><span>AH 6578 JK</span></div>
+
+                  <button class="payment__code-copy">
+                    <svg width='28' height='28'>
+                    <use href='img/sprite/sprite.svg#copy'></use>
+                    </svg>
+                  </button>
+
+                  <div class="payment__code-text">Your key</div>
                 </div>
-
-                <div class="payment__inner-block">
-                  <div class="payment__inner-subtitle">Select plan</div>
-
-                  <ul class="payment__plans plan">
-                    <li class="plan__items">
-                      <label class="plan__item">
-                        <input class="plan__radio" type="radio" name="plan">
-                        <span class="plan__price">
-                          <span class="plan__price-period">1 Year</span>
-                          <div class="plan__price-current">$<span>21.99</span></div>
-                          <div class="plan__price-default">$<span>42.99</span></div>
-                          <span class="plan__price-discount">-<span>50</span>%</span>
-                        </span>
-                      </label>
+                <div class="payment__success-activation">
+                  <p class="payment__activation-text">How to activate your key</p>
+                  <ul class="payment__activation-steps">
+                    <li class="payment__step">
+                      <div class="payment__step-count">1</div>
+                      <div class="payment__step-descr">Open the menu in the application</div>
                     </li>
-                    <li class="plan__items">
-                      <label class="plan__item">
-                        <input class="plan__radio" type="radio" name="plan">
-                        <span class="plan__price">
-                          <span class="plan__price-period">6 Monthes</span>
-                          <div class="plan__price-current">$<span>16.59</span></div>
-                          <div class="plan__price-default">$<span>24.99</span></div>
-                          <span class="plan__price-discount">-<span>25</span>%</span>
-                        </span>
-                      </label>
-                    </li>
-                    <li class="plan__items">
-                      <label class="plan__item">
-                        <input class="plan__radio" type="radio" name="plan">
-                        <span class="plan__price">
-                          <span class="plan__price-period">1 Month</span>
-                          <div class="plan__price-current">$<span>3.99</span></div>
-                        </span>
-                      </label>
+                    <li class="payment__step">
+                      <div class="payment__step-count">2</div>
+                      <div class="payment__step-descr">Enter the key in the activate key section.</div>
                     </li>
                   </ul>
                 </div>
-
-                <div class="payment__inner-block">
-                  <div class="payment__inner-subtitle">Select payment method</div>
-
-                  <ul class="payment__method method">
-                    <li class="method__items">
-                      <label class="method__item">
-                        <input class="method__radio" type="radio" name="method">
-                        <span class="method__name">
-                          <svg width='49' height='16'>
-                            <use href='img/sprite/sprite.svg#visa'></use>
-                          </svg>
-                        </span>
-                      </label>
-                    </li>
-
-                    <li class="method__items">
-                      <label class="method__item">
-                        <input class="method__radio" type="radio" name="method">
-                        <span class="method__name">
-                          <svg width='45' height='27'>
-                            <use href='img/sprite/sprite.svg#mastercard'></use>
-                          </svg>
-                        </span>
-                      </label>
-                    </li>
-
-                    <li class="method__items">
-                      <label class="method__item">
-                        <input class="method__radio" type="radio" name="method">
-                        <span class="method__name">
-                          <svg width='51' height='21'>
-                            <use href='img/sprite/sprite.svg#stripe'></use>
-                          </svg>
-                        </span>
-                      </label>
-                    </li>
-
-                    <li class="method__items">
-                      <label class="method__item">
-                        <input class="method__radio" type="radio" name="method">
-                        <span class="method__name">
-                          <svg width='40' height='35'>
-                            <use href='img/sprite/sprite.svg#paypal'></use>
-                          </svg>
-                        </span>
-                      </label>
-                    </li>
-
-                    <li class="method__items">
-                      <label class="method__item">
-                        <input class="method__radio" type="radio" name="method">
-                        <span class="method__name">
-                          <svg width='50' height='21'>
-                            <use href='img/sprite/sprite.svg#googlepay'></use>
-                          </svg>
-                        </span>
-                      </label>
-                    </li>
-
-                    <li class="method__items">
-                      <label class="method__item">
-                        <input class="method__radio" type="radio" name="method">
-                        <span class="method__name">
-                          <svg width='50' height='21'>
-                            <use href='img/sprite/sprite.svg#applepay'></use>
-                          </svg>
-                        </span>
-                      </label>
-                    </li>
-
-                    <li class="method__items">
-                      <label class="method__item">
-                        <input class="method__radio" type="radio" name="method">
-                        <span class="method__name">
-                          <picture>
-                            <img width='57' height='12' src='img/sprite/btc.svg' alt=''>
-                          </picture>
-                        </span>
-                      </label>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="payment__inner-block">
-                  <div class="payment__inner-subtitle">Contact information<span>*</span></div>
-
-                  <div class="payment__inner-contacts">
-                    <fieldset class="contacts__form-fieldset">
-                      <div class="contacts__form-name">Your email</div>
-                      <label class="contacts__form-label">
-                        <input class="contacts__form-input" type="text" placeholder="Type your email">
-                      </label>
-                    </fieldset>
-
-                    <div class="payment__contacts-divider"><span>or</span></div>
-
-                    <fieldset class="contacts__form-fieldset">
-                      <div class="contacts__form-name">Telegram</div>
-                      <label class="contacts__form-label">
-                        <span class="contacts__telegram-start">t.me/</span>
-                        <input class="contacts__form-input contacts__form-input--telegram" type="text" placeholder="Your nickname">
-                      </label>
-                    </fieldset>
-                  </div>
-
-                  <p class="payment__contacts-text">We need your contact information for sending Key and links</p>
-                  <button class="payment__btn">Go to payment</button>
-                </div>
+                <button class="button__success button" data-path="application">QR - Open on mobile device and activate</button>
               </div>
             </div>
           </div>
