@@ -6,12 +6,12 @@
     padding: 125px 0 105px;
   }
 
-  // &__wrapp {
-  //   display: flex;
-  // }
-
   &__image-bg {
     position: absolute;
     right: 30px;
+
+    @media (max-width: 1440px) {
+      right: -7%;
+    }
   }
 }

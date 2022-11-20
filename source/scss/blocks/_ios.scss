@@ -143,5 +143,9 @@
   &__image-bg {
     position: absolute;
     right: 30px;
+
+    @media (max-width: 1440px) {
+      right: -30px;
+    }
   }
 }

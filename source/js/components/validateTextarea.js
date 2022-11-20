@@ -2,7 +2,7 @@ function validateTextarea () {
   const textarea = document.querySelector('.contacts__form-textarea');
   const result = document.querySelector('.contacts__textarea-result');
 
-  const limit = 10;
+  const limit = 255;
 
   if(result) {
     result.textContent = 0 + "/" + limit;
