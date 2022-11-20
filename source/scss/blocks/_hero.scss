@@ -5,14 +5,24 @@
 
   &__planet {
     position: absolute;
-    height: 688px;
-    top: 0;
-    right: 30px;
+    height: 600px;
+    top: -30px;
+    right: -25%;
   }
 
   &__text {
     max-width: 760px;
     margin-bottom: 30px;
+  }
+
+  &__title {
+    height: 76px;
+    display: flex;
+  }
+
+  &__title-slide {
+    display: flex;
+    color: #4467FB;
   }
 
   &__plans {
