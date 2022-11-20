@@ -4,7 +4,8 @@
   transition: all 0.4s ease;
 
 
-  &__buy {
+  &__buy,
+  &__activate {
     color: var(--color-white);
     background-color: var(--color-blue);
     transition: all 0.4s ease;
@@ -12,6 +13,10 @@
     &:hover {
       background-color: rgba(68, 103, 251, 0.8);
     }
+  }
+
+  &__activate {
+    padding: 9px 26.5px;
   }
 
   &__account,

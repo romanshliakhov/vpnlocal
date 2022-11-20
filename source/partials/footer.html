@@ -37,7 +37,7 @@
               <a class="footer__link" href="/android-tv.html">Android TV</a>
             </li>
             <li class="footer__list-item">
-              <button class="footer__link">Help</button>
+              <button class="footer__link" data-path="faq">Help</button>
             </li>
           </ul>
         </nav>
@@ -121,12 +121,18 @@
               </span>
 
               <div class="lang__title">English</div>
+
+              <svg width='16' height='16'>
+              <use href='img/sprite/sprite.svg#drop-down'></use>
+              </svg>
             </div>
 
             <div class="lang__body select__body">
-              <label class="lang__search">
-                <input class="lang__input" type="search" placeholder="Search">
-              </label>
+              <div class="lang__search search">
+                <label class="search__label">
+                  <input class="search__input" type="search" placeholder="Search">
+                </label>
+              </div>
 
               <ul class="lang__list">
                 <li class="lang__item select__item" data-choice='choosen'>

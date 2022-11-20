@@ -308,3 +308,34 @@
   font-size: 16px;
   line-height: 26px;
 }
+
+.code__title {
+  font-family: var(--font-family-hind);
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+.modal__head-title {
+  font-family: var(--font-family-hind);
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: 700;
+}
+
+.faq__item-head {
+  font-size: 18px;
+  line-height: 148%;
+  font-weight: 600;
+}
+
+.faq__item-details {
+  font-size: 14px;
+  line-height: 148%;
+}
+
+.application__country-name {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+}
