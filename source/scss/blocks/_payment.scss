@@ -1,14 +1,16 @@
 .payment {
-  padding: 25px 0 60px;
+  padding: 25px 0 clamp(20px, 6.552vw, 65px);
   background-color: var(--color-alice-blue);
 
   &__wrapp {
     margin: 0 auto;
-    width: fit-content;
+    max-width: 630px;
+    width: 100%;
+    padding: 0 16px;
 
     &--success {
-      max-width: 630px;
-      width: 100%;
+      // max-width: 630px;
+      // width: 100%;
     }
   }
 
@@ -94,6 +96,18 @@
     border-bottom-right-radius: 10px;
     border: 1px solid #D9D9D9;
     text-align: center;
+
+    @media (max-width: 1024px) {
+      width: 100%;
+      position: relative;
+      right: initial;
+      flex-direction: row;
+      background-color: #F4F8FB;
+      border-radius: 20px;
+      border: transparent;
+      padding: 16px;
+      text-align: left;
+    }
   }
 
   &__details-text {
@@ -102,6 +116,10 @@
 
     a {
       color: #4467FB;
+    }
+
+    @media (max-width: 1024px) {
+      max-width: 100%;
     }
   }
 

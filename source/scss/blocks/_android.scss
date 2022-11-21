@@ -2,8 +2,16 @@
   display: flex;
   background: linear-gradient(90deg, rgba(255,255,255,1) 72%, rgba(68,103,251,1) 28%);
 
+  @media (max-width: 1024px) {
+    background: var(--color-white);
+  }
+
   &__info {
     padding: 125px 0 105px;
+
+    @media (max-width: 1024px) {
+      padding: 38px 0;
+    }
   }
 
   &__image-bg {

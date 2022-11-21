@@ -1,5 +1,5 @@
 .security {
-  padding: 150px 0 75px;
+  padding: clamp(116px, 14.648vw, 150px) 0 75px;
   background-color: var(--color-black);
 
   &__wrapp {
@@ -7,6 +7,11 @@
     align-items: flex-start;
     grid-gap: 13px;
     color: var(--color-white);
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__info {
@@ -14,6 +19,23 @@
     display: flex;
     flex-direction: column;
     grid-gap: 24px;
+
+    @media (max-width: 1024px) {
+      max-width: 475px;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    align-items: center;
+  }
+
+  &__subtitle {
+    max-width: 300px;
+  }
+
+  &__descr {
+    color: #8C8D96;
   }
 
   &__info-items {
@@ -21,6 +43,10 @@
     align-items: center;
     flex-wrap: wrap;
     grid-gap: 10px;
+
+    @media (max-width: 1024px) {
+      justify-content: center;
+    }
   }
 
   &__info-link {

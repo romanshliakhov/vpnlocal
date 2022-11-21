@@ -1,5 +1,5 @@
 .benefits {
-  padding: 79px 0 77px;
+  padding: clamp(69px, 7.715vw, 79px) 0 clamp(60px, 7.52vw, 77px);
 
   &__wrapp {
     display: flex;
@@ -33,6 +33,27 @@
     grid-gap: 8px;
     border: 1px solid #D9D9D9;
     border-radius: 10px;
+
+    @media (max-width: 1024px) {
+      order: 2;
+
+      &:last-child {
+        order: 0;
+      }
+
+      &:nth-child(2) {
+        order: 0;
+      }
+
+      &:nth-child(4) {
+        order: 1;
+      }
+
+      &:nth-child(3) {
+        order: 3;
+      }
+
+    }
   }
 
   &__list-descr {

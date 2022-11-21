@@ -9,17 +9,9 @@ let replaceSettings = {
 }
 
 let elementName = {
-  phone: '.header__contact',
-  phoneParent: '.header__adress',
-  phoneMobile: '.header__logo',
-
-  sortingBtn : '.seo__consultation-title',
-  formParentBtn: '.seo__consultation-info',
-  mobileSiblingstBtn: '.seo__consultation',
-
-  lang: '.lang',
-  langParent: '.header__worktime',
-  langMobile: '.mobile__lang',
+  details: '.payment__details',
+  detailsParent: '.payment__inner',
+  detailsMobile: '.payment__btn',
 }
 
 let items = [...document.querySelectorAll('.wrapper')];
@@ -43,15 +35,9 @@ const replaceElements = (elements, elementClass, desktopClass, mobileClass, mobi
 }
 
 window.addEventListener('resize', () => {
-  replaceElements(items, elementName.sortingBtn, elementName.formParentBtn, elementName.mobileSiblingstBtn, replaceSettings.beforebegin, replaceSettings.afterbegin, replaceSettings.tablet);
-  replaceElements(items, elementName.phone, elementName.phoneParent, elementName.phoneMobile, replaceSettings.afterend, replaceSettings.beforebegin, replaceSettings.tablet);
-  replaceElements(items, elementName.lang, elementName.langParent, elementName.langMobile, replaceSettings.afterend, replaceSettings.afterend, replaceSettings.tablet);
+  replaceElements(items, elementName.details, elementName.detailsParent, elementName.detailsMobile, replaceSettings.beforebegin, replaceSettings.afterbegin, replaceSettings.tablet);
 });
 
 window.addEventListener('DOMContentLoaded', () => {
-  replaceElements(items, elementName.sortingBtn, elementName.formParentBtn, elementName.mobileSiblingstBtn, replaceSettings.beforebegin, replaceSettings.afterbegin, replaceSettings.tablet);
-  replaceElements(items, elementName.phone, elementName.phoneParent, elementName.phoneMobile, replaceSettings.afterend, replaceSettings.beforebegin, replaceSettings.tablet);
-  replaceElements(items, elementName.lang, elementName.langParent, elementName.langMobile, replaceSettings.afterend, replaceSettings.afterend, replaceSettings.tablet);
-
-
+  replaceElements(items, elementName.details, elementName.detailsParent, elementName.detailsMobile, replaceSettings.beforebegin, replaceSettings.afterbegin, replaceSettings.tablet);
 });

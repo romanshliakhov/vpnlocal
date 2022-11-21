@@ -10,6 +10,10 @@
   &__text {
     max-width: 522px;
     margin-bottom: 28px;
+
+    @media (max-width: 1024px) {
+      max-width: 370px;
+    }
   }
 
   &__lists {
