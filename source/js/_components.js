@@ -9,6 +9,7 @@ import './components/replaceEl.js';
 import './components/tabs.js';
 import './components/animateplanet.js';
 import './components/validateTextarea.js';
+import './components/hexagon.js';
 
 
 

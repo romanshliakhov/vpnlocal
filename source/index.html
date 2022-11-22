@@ -2,456 +2,550 @@
 <html lang="en">
 @include('partials/head.html',{})
 
-  <body>
-    <div class="wrapper">
-      @include('partials/header.html',{})
+<body>
+  <div class="wrapper">
+    @include('partials/header.html',{})
 
-      <main class="main">
-        <section class="hero">
-          <div class="container">
-            <div class="hero__wrapp">
-              <div class="hero__info">
-                <div class="hero__text text">
-                  <h1 class="hero__title title">Like a local
-                    <div class="hero__title-slider swiper-container">
-                      <ul class='swiper-wrapper'>
-                        <li class='hero__title-slide swiper-slide'>everywhere</li>
-                        <li class='hero__title-slide swiper-slide'>anytime</li>
-                        <li class='hero__title-slide swiper-slide'>unlimited</li>
-                        <li class='hero__title-slide swiper-slide'>anywhere</li>
-                      </ul>
-                    </div>
-                  </h1>
-                  <p class="hero__descr">Fast, Unlimited, Worldwide </p>
-                </div>
-
-                <ul class="hero__plans plans">
-                  <li class="plans__list">
-                    <div class="plans__season">1 Year</div>
-
-                    <div class="plans__price">
-                      <div class="plans__price-current">$<span>21.99</span></div>
-                      <div class="plans__price-default">$<span>42.99</span></div>
-                      <div class="plans__price-discount">-<span>50</span>%</div>
-                    </div>
-
-                    <button class="plans__select">Select</button>
-                  </li>
-                  <li class="plans__list">
-                    <div class="plans__season">6 Monthes</div>
-
-                    <div class="plans__price">
-                      <div class="plans__price-current">$<span>16.59</span></div>
-                      <div class="plans__price-default">$<span>24.99</span></div>
-                      <div class="plans__price-discount">-<span>25</span>%</div>
-                    </div>
-
-                    <button class="plans__select">Select</button>
-                  </li>
-                  <li class="plans__list">
-                    <div class="plans__season">1 Month</div>
-
-                    <div class="plans__price">
-                      <div class="plans__price-current">$<span>3.69</span></div>
-                    </div>
-
-                    <button class="plans__select">Select</button>
-                  </li>
-                </ul>
-
-                <div class="hero__app">
-                  <div class="hero__app-title">Free APP</div>
-                  <div class="hero__app-info">
-                    <ul class="hero__app-items">
-                      <li class="hero__app-item">
-                        <svg width='24' height='24'>
-                          <use href='img/sprite/sprite.svg#downloads'></use>
-                        </svg>
-                        <div class="hero__app-descr"><span>46+m</span> downloads world wide</div>
-                      </li>
-                      <li class="hero__app-item">
-                        <svg width='24' height='24'>
-                          <use href='img/sprite/sprite.svg#rating'></use>
-                        </svg>
-                        <div class="hero__app-descr"><span>4.6</span> Rating</div>
-                      </li>
-                      <li class="hero__app-item">
-                        <svg width='24' height='24'>
-                          <use href='img/sprite/sprite.svg#deliver'></use>
-                        </svg>
-                        <div class="hero__app-descr"><span>136</span> petabite deliveded</div>
-                      </li>
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero__wrapp">
+            <div class="hero__info">
+              <div class="hero__text text">
+                <h1 class="hero__title title">Like a local
+                  <div class="hero__title-slider swiper-container">
+                    <ul class='swiper-wrapper'>
+                      <li class='hero__title-slide swiper-slide'>everywhere</li>
+                      <li class='hero__title-slide swiper-slide'>anytime</li>
+                      <li class='hero__title-slide swiper-slide'>unlimited</li>
+                      <li class='hero__title-slide swiper-slide'>anywhere</li>
                     </ul>
+                  </div>
+                </h1>
+                <p class="hero__descr">Fast, Unlimited, Worldwide </p>
+              </div>
 
-                    <div class="hero__app-downloads">
-                      <div class="hero__app-links">
-                        <a class="market" href="#">
-                          <img width='85' height='20' src="../img/google.svg" alt="Google Play">
-                        </a>
-                        <a class="market" href="#">
-                          <img width='84' height='23' src="../img/apple.svg" alt="Apple Store">
-                        </a>
-                      </div>
+              <ul class="hero__plans plans">
+                <li class="plans__list">
+                  <div class="plans__season">1 Year</div>
 
-                      <div class="hero__scan scan">
-                        <div class="scan__code">
-                          <picture>
-                            <source type='image/webp' srcset='img/scan-code.webp'>
-                            <img width='92' height='92' src='img/scan-code.png' alt='QR code for scan'>
-                          </picture>
-                        </div>
-                        <p class="scan__descr">Scan to download</p>
+                  <div class="plans__price">
+                    <div class="plans__price-current">$<span>21.99</span></div>
+                    <div class="plans__price-default">$<span>42.99</span></div>
+                    <div class="plans__price-discount">-<span>50</span>%</div>
+                  </div>
+
+                  <button class="plans__select">Select</button>
+                </li>
+                <li class="plans__list">
+                  <div class="plans__season">6 Monthes</div>
+
+                  <div class="plans__price">
+                    <div class="plans__price-current">$<span>16.59</span></div>
+                    <div class="plans__price-default">$<span>24.99</span></div>
+                    <div class="plans__price-discount">-<span>25</span>%</div>
+                  </div>
+
+                  <button class="plans__select">Select</button>
+                </li>
+                <li class="plans__list">
+                  <div class="plans__season">1 Month</div>
+
+                  <div class="plans__price">
+                    <div class="plans__price-current">$<span>3.69</span></div>
+                  </div>
+
+                  <button class="plans__select">Select</button>
+                </li>
+              </ul>
+
+              <div class="hero__app">
+                <div class="hero__app-title">Free APP</div>
+                <div class="hero__app-info">
+                  <ul class="hero__app-items">
+                    <li class="hero__app-item">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#downloads'></use>
+                      </svg>
+                      <div class="hero__app-descr"><span>46+m</span> downloads world wide</div>
+                    </li>
+                    <li class="hero__app-item">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#rating'></use>
+                      </svg>
+                      <div class="hero__app-descr"><span>4.6</span> Rating</div>
+                    </li>
+                    <li class="hero__app-item">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#deliver'></use>
+                      </svg>
+                      <div class="hero__app-descr"><span>136</span> petabite deliveded</div>
+                    </li>
+                  </ul>
+
+                  <div class="hero__app-downloads">
+                    <div class="hero__app-links">
+                      <a class="market" href="#">
+                        <img width='85' height='20' src="../img/google.svg" alt="Google Play">
+                      </a>
+                      <a class="market" href="#">
+                        <img width='84' height='23' src="../img/apple.svg" alt="Apple Store">
+                      </a>
+                    </div>
+
+                    <div class="hero__scan scan">
+                      <div class="scan__code">
+                        <picture>
+                          <source type='image/webp' srcset='img/scan-code.webp'>
+                          <img width='92' height='92' src='img/scan-code.png' alt='QR code for scan'>
+                        </picture>
                       </div>
+                      <p class="scan__descr">Scan to download</p>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <div class="hero__about">
-                <div class="hero__about-info">
-                  <div class="hero__about-head">About service</div>
-                  <h2 class="subtitle">Best VPN with fastest servers ever in your life</h2>
-                </div>
-                <div class="hero__about-details">
-                  <p class="hero__about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet ut mattis ullamcorper montes, vestibulum lacinia curabitur bibendum mauris. In quis pretium, blandit egestas urna est, felis.</p>
-                  <p class="hero__about-text">Accumsan, ligula ut risus tincidunt sit ut ac iaculis. Ullamcorper morbi est at faucibus nam.</p>
-                  <p class="hero__about-text">Morbi id bibendum nec dictumst sit eros, id. Platea adipiscing morbi nulla nulla aliquam ultrices turpis nisi. Orci dui tempor et erat neque, volutpat. Vulputate sed cras sit interdum maecenas turpis. Justo hac rhoncus aliquet et,</p>
-                </div>
-              </div>
             </div>
 
-            <div class="hero__planet"></div>
+            <div class="hero__about">
+              <div class="hero__about-info">
+                <div class="hero__about-head">About service</div>
+                <h2 class="subtitle">Best VPN with fastest servers ever in your life</h2>
+              </div>
+              <div class="hero__about-details">
+                <p class="hero__about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet ut mattis
+                  ullamcorper montes, vestibulum lacinia curabitur bibendum mauris. In quis pretium, blandit egestas
+                  urna est, felis.</p>
+                <p class="hero__about-text">Accumsan, ligula ut risus tincidunt sit ut ac iaculis. Ullamcorper morbi est
+                  at faucibus nam.</p>
+                <p class="hero__about-text">Morbi id bibendum nec dictumst sit eros, id. Platea adipiscing morbi nulla
+                  nulla aliquam ultrices turpis nisi. Orci dui tempor et erat neque, volutpat. Vulputate sed cras sit
+                  interdum maecenas turpis. Justo hac rhoncus aliquet et,</p>
+              </div>
+            </div>
           </div>
-        </section>
 
-        <section class="security">
-          <div class="container">
-            <div class="security__wrapp">
-              <div class="security__info">
-                <div class="security__text text">
-                  <h2 class="security__subtitle subtitle">Feel extra security with our VPN</h2>
-                  <p class="security__descr descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie aenean fermentum ullamcorper at magna scelerisque proin.</p>
-                </div>
+          <div class="hero__planet"></div>
+        </div>
+      </section>
 
-                <ul class="security__info-items">
-                  <li class="security__info-item">
-                    <a class="security__info-link" href="#">OpenVPN</a>
-                  </li>
-                  <li class="security__info-item">
-                    <a class="security__info-link" href="#">WireGuard</a>
-                  </li>
-                  <li class="security__info-item">
-                    <a class="security__info-link" href="#">Shadowsoks</a>
-                  </li>
-                  <li class="security__info-item">
-                    <a class="security__info-link" href="#">2048 Key</a>
-                  </li>
-                </ul>
+      <section class="security">
+        <div class="container">
+          <div class="security__wrapp">
+            <div class="security__info">
+              <div class="security__text text">
+                <h2 class="security__subtitle subtitle">Feel extra security with our VPN</h2>
+                <p class="security__descr descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie
+                  aenean fermentum ullamcorper at magna scelerisque proin.</p>
               </div>
 
-              <ul class="security__details">
-                <li class="security__details-item">
-                  <div class="security__details-image">
-                    <picture>
-                      <source type='image/webp' srcset='img/security/advanced.webp'>
-                      <img width='125' height='126' src='img/security/advanced.png' alt=''>
-                    </picture>
-                  </div>
-                  <div class="security__details-text text">
-                    <div class="security__details-name">Advanced Encryption</div>
-                    <p class="security__details-descr descr">Safeguard any connection to handle personal data with end-to-end security.</p>
-                  </div>
+              <ul class="security__info-items">
+                <li class="security__info-item">
+                  <a class="security__info-link" href="#">OpenVPN</a>
                 </li>
-
-                <li class="security__details-item">
-                  <div class="security__details-image">
-                    <picture>
-                      <source type='image/webp' srcset='img/security/save.webp'>
-                      <img width='140' height='140' src='img/security/save.png' alt=''>
-                    </picture>
-                  </div>
-                  <div class="security__details-text text">
-                    <div class="security__details-name">Safe Access</div>
-                    <p class="security__details-descr descr">Connect to online content from anywhere without the risk of blocks.</p>
-                  </div>
+                <li class="security__info-item">
+                  <a class="security__info-link" href="#">WireGuard</a>
                 </li>
-
-                <li class="security__details-item">
-                  <div class="security__details-image">
-                    <picture>
-                      <source type='image/webp' srcset='img/security/online.webp'>
-                      <img width='205' height='108' src='img/security/online.png' alt=''>
-                    </picture>
-                  </div>
-                  <div class="security__details-text text">
-                    <div class="security__details-name">Online Anonymity</div>
-                    <p class="security__details-descr descr">Protect the privacy of daily internet activity to avoid ISP tracking.</p>
-                  </div>
+                <li class="security__info-item">
+                  <a class="security__info-link" href="#">Shadowsoks</a>
                 </li>
-
-                <li class="security__details-item">
-                  <div class="security__details-image">
-                    <picture>
-                      <source type='image/webp' srcset='img/security/logs.webp'>
-                      <img width='162' height='162' src='img/security/logs.png' alt=''>
-                    </picture>
-                  </div>
-                  <div class="security__details-text text">
-                    <div class="security__details-name">No Logs</div>
-                    <p class="security__details-descr descr">Protect VPN usage with an <span><br> independently <br> verified no traffic logs policy.</span></p>
-                  </div>
-                </li>
-
-                <li class="security__details-item">
-                  <div class="security__details-image">
-                    <picture>
-                      <source type='image/webp' srcset='img/security/connections.webp'>
-                      <img width='125' height='125' src='img/security/connections.png' alt=''>
-                    </picture>
-                  </div>
-                  <div class="security__details-text text">
-                    <div class="security__details-name">Unmetered Connections</div>
-                    <p class="security__details-descr descr">Secure every device you own with no connection caps.</p>
-                  </div>
-                </li>
-
-                <li class="security__details-item">
-                  <div class="security__details-image">
-                    <picture>
-                      <source type='image/webp' srcset='img/security/innovative.webp'>
-                      <img width='125' height='126' src='img/security/innovative.png' alt=''>
-                    </picture>
-                  </div>
-                  <div class="security__details-text text">
-                    <div class="security__details-name">Innovative Technology</div>
-                    <p class="security__details-descr descr">Power your traffic with <span>WireGuard®</span>, the latest advanced in VPN protocols.</p>
-                  </div>
+                <li class="security__info-item">
+                  <a class="security__info-link" href="#">2048 Key</a>
                 </li>
               </ul>
             </div>
-          </div>
-        </section>
 
-        <section class="access">
-          <div class="access__text text">
-            <h2 class="subtitle">Access to blocked resources</h2>
-            <p class="access__descr descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie aenean fermentum ullamcorper at magna scelerisque proin.</p>
-          </div>
+            <ul class="security__details">
+              <li class="security__details-item">
+                <div class="security__details-image">
+                  <picture>
+                    <source type='image/webp' srcset='img/security/advanced.webp'>
+                    <img width='125' height='126' src='img/security/advanced.png' alt=''>
+                  </picture>
+                </div>
+                <div class="security__details-text text">
+                  <div class="security__details-name">Advanced Encryption</div>
+                  <p class="security__details-descr descr">Safeguard any connection to handle personal data with
+                    end-to-end security.</p>
+                </div>
+              </li>
 
+              <li class="security__details-item">
+                <div class="security__details-image">
+                  <picture>
+                    <source type='image/webp' srcset='img/security/save.webp'>
+                    <img width='140' height='140' src='img/security/save.png' alt=''>
+                  </picture>
+                </div>
+                <div class="security__details-text text">
+                  <div class="security__details-name">Safe Access</div>
+                  <p class="security__details-descr descr">Connect to online content from anywhere without the risk of
+                    blocks.</p>
+                </div>
+              </li>
+
+              <li class="security__details-item">
+                <div class="security__details-image">
+                  <picture>
+                    <source type='image/webp' srcset='img/security/online.webp'>
+                    <img width='205' height='108' src='img/security/online.png' alt=''>
+                  </picture>
+                </div>
+                <div class="security__details-text text">
+                  <div class="security__details-name">Online Anonymity</div>
+                  <p class="security__details-descr descr">Protect the privacy of daily internet activity to avoid ISP
+                    tracking.</p>
+                </div>
+              </li>
+
+              <li class="security__details-item">
+                <div class="security__details-image">
+                  <picture>
+                    <source type='image/webp' srcset='img/security/logs.webp'>
+                    <img width='162' height='162' src='img/security/logs.png' alt=''>
+                  </picture>
+                </div>
+                <div class="security__details-text text">
+                  <div class="security__details-name">No Logs</div>
+                  <p class="security__details-descr descr">Protect VPN usage with an <span><br> independently <br>
+                      verified no traffic logs policy.</span></p>
+                </div>
+              </li>
+
+              <li class="security__details-item">
+                <div class="security__details-image">
+                  <picture>
+                    <source type='image/webp' srcset='img/security/connections.webp'>
+                    <img width='125' height='125' src='img/security/connections.png' alt=''>
+                  </picture>
+                </div>
+                <div class="security__details-text text">
+                  <div class="security__details-name">Unmetered Connections</div>
+                  <p class="security__details-descr descr">Secure every device you own with no connection caps.</p>
+                </div>
+              </li>
+
+              <li class="security__details-item">
+                <div class="security__details-image">
+                  <picture>
+                    <source type='image/webp' srcset='img/security/innovative.webp'>
+                    <img width='125' height='126' src='img/security/innovative.png' alt=''>
+                  </picture>
+                </div>
+                <div class="security__details-text text">
+                  <div class="security__details-name">Innovative Technology</div>
+                  <p class="security__details-descr descr">Power your traffic with <span>WireGuard®</span>, the latest
+                    advanced in VPN protocols.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="access">
+        <div class="container">
           <div class="access__wrapp">
-            12
-          </div>
-        </section>
+            <div class="access__text text">
+              <h2 class="subtitle">Access to blocked resources</h2>
+              <p class="access__descr descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie aenean
+                fermentum ullamcorper at magna scelerisque proin.</p>
+            </div>
 
-        <section class="devices">
-          <div class="container">
-            <div class="devices__wrapp">
-              <div class="devices__text text">
-                <h2 class="subtitle">Supported Devices</h2>
-                <p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie aenean fermentum ullamcorper at magna scelerisque proin.</p>
+            <div class="access__hexagon">
+              <div class="access__hexagon-block">
+                <div class="access__item">
+                  <div class="access__item-content">
+                    <img class="access__item-background" src="./img/access/hbo.png" alt="">
+                  </div>
+                </div>
+
+                <div class="access__item">
+                  <div class="access__item-content">
+                    <img class="access__item-background" src="./img/access/disney.png" alt="">
+                  </div>
+                </div>
+
+                <div class="access__item">
+                  <div class="access__item-content">
+                    <img class="access__item-background" src="./img/access/youtube.png" alt="">
+                  </div>
+                </div>
+
+                <div class="access__item">
+                  <div class="access__item-content">
+                    <img class="access__item-background" src="./img/access/inst.png" alt="">
+                  </div>
+                </div>
+
+                <div class="access__item">
+                  <div class="access__item-content">
+                    <img class="access__item-background" src="./img/access/ph.png" alt="">
+                  </div>
+                </div>
               </div>
 
-              <div class="devices__support tabs">
-                <ul class="devices__support-list">
-                  <li class="devices__support-item tablinks" tabs-btn="ios">
-                    <button class="devices__support-btn" >
-                        <svg width='24' height='24'>
-                          <use href='img/sprite/sprite.svg#ios'></use>
-                        </svg>
-                        <span>iOS</span>
-                    </button>
-                  </li>
-                  <li class="devices__support-item tablinks active" tabs-btn="android">
-                    <button class="devices__support-btn" >
-                        <svg width='24' height='24'>
-                          <use href='img/sprite/sprite.svg#android'></use>
-                        </svg>
-                        <span>Android</span>
-                    </button>
-                  </li>
-                  <li class="devices__support-item tablinks" tabs-btn="androidtv">
-                    <button class="devices__support-btn" >
-                        <svg width='24' height='24'>
-                          <use href='img/sprite/sprite.svg#android-tv'></use>
-                        </svg>
-                        <span>Android TV</span>
-                    </button>
-                  </li>
-                </ul>
+              <div class="access__hexagon-midblock">
+                <div class="access__item">
+                  <div class="access__item-content">
+                    <img class="access__item-background" src="./img/access/lock.png" alt="">
+                  </div>
+                </div>
 
-                <ul class="devices__content-list">
-                  <li class="devices__content-item">
-                    <div class="devices__content tabcontent" tabs-content="ios">
-                      <div class="devices__content-info">
-                        <div class="devices__content-logo">
-                          <img width="135" height="33" src="./img/flexvpnwhite.svg" alt="">
-                        </div>
+                <p>And 1,000+ other cool services</p>
+              </div>
 
-                        <div class="devices__content-text text">
-                          <div class="subtitle">iOS</div>
-                          <p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet ut mattis ullamcorper montes, vestibulum lacinia curabitur bibendum mauris. In quis pretium, blandit egestas urna est, felis.</p>
-                        </div>
+              <div class="access__hexagon-block">
+                <div class="access__item">
+                  <div class="access__item-content">
+                    <img class="access__item-background" src="./img/access/utorrent.png" alt="">
+                  </div>
+                </div>
 
-                        <div class="devices__download">
-                          <div class="devices__content-article">Free app in store</div>
+                <div class="access__item">
+                  <div class="access__item-content">
+                    <img class="access__item-background" src="./img/access/reddit.png" alt="">
+                  </div>
+                </div>
 
-                          <div class="devices__keys-download">
-                            <a class="market" href="#">
-                              <img width='84' height='23' src="../img/apple.svg" alt="Apple Store">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="devices__content-image">
-                        <picture>
-                          <source type='image/webp' srcset='img/devices/ios.webp'>
-                          <img width='442' height='475' src='img/devices/ios.png' alt=''>
-                        </picture>
-                      </div>
-                    </div>
-                  </li>
+                <div class="access__item">
+                  <div class="access__item-content">
+                    <img class="access__item-background" src="./img/access/telegram.png" alt="">
+                  </div>
+                </div>
 
-                  <li class="devices__content-item">
-                    <div class="devices__content tabcontent active" tabs-content="android">
-                      <div class="devices__content-info">
-                        <div class="devices__content-text text">
-                          <div class="subtitle">Android</div>
-                          <p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet ut mattis ullamcorper montes, vestibulum lacinia curabitur bibendum mauris. In quis pretium, blandit egestas urna est, felis.</p>
-                        </div>
+                <div class="access__item">
+                  <div class="access__item-content">
+                    <img class="access__item-background" src="./img/access/facebook.png" alt="">
+                  </div>
+                </div>
 
-                        <div class="devices__download">
-                          <div class="devices__content-article">Free app in store</div>
-
-                          <div class="devices__keys-download">
-                            <a class="market" href="#">
-                              <img width='85' height='20' src="../img/google.svg" alt="Google Play">
-                            </a>
-                          </div>
-                        </div>
-
-                        <div class="devices__keys">
-                          <div class="devices__content-article">Ключ доступа для .apk</div>
-
-                          <div class="devices__keys-download">
-                            <a class="button__keys-download button" href="#">Download .apk</a>
-                            <a class="button__keys-buy button" href="/payment.html">Buy key</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="devices__content-image">
-                        <picture>
-                          <source type='image/webp' srcset='img/devices/android.webp'>
-                          <img width='409' height='361' src='img/devices/android.png' alt=''>
-                        </picture>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li class="devices__content-item">
-                    <div class="devices__content tabcontent" tabs-content="androidtv">
-                      <div class="devices__content-info">
-                        <div class="devices__content-text text">
-                          <div class="subtitle">Android TV</div>
-                          <p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet ut mattis ullamcorper montes, vestibulum lacinia curabitur bibendum mauris. In quis pretium, blandit egestas urna est, felis.</p>
-                        </div>
-
-                        <div class="devices__download">
-                          <div class="devices__content-article">Free app in store</div>
-
-                          <div class="devices__keys-download">
-                            <a class="market" href="#">
-                              <img width='85' height='20' src="../img/google.svg" alt="Google Play">
-                            </a>
-                          </div>
-                        </div>
-
-                        <div class="devices__keys">
-                          <div class="devices__content-article">Ключ доступа для .apk</div>
-
-                          <div class="devices__keys-download">
-                            <a class="button__keys-download button" href="#">Download .apk</a>
-                            <a class="button__keys-buy button" href="/payment.html">Buy key</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="devices__content-image">
-                        <picture>
-                          <source type='image/webp' srcset='img/devices/android-tv.webp'>
-                          <img width='344' height='468' src='img/devices/android-tv.png' alt=''>
-                        </picture>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
+                <div class="access__item">
+                  <div class="access__item-content">
+                    <img class="access__item-background" src="./img/access/netflix.png" alt="">
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="benefits">
-          <div class="container">
-            <div class="benefits__wrapp">
-              <div class="benefits__text text">
-                <h2 class="subtitle">Benefits VPN Local</h2>
-                <p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie aenean fermentum ullamcorper at magna scelerisque proin.</p>
-              </div>
+      <section class="devices">
+        <div class="container">
+          <div class="devices__wrapp">
+            <div class="devices__text text">
+              <h2 class="subtitle">Supported Devices</h2>
+              <p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie aenean fermentum
+                ullamcorper at magna scelerisque proin.</p>
+            </div>
 
-              <ul class="benefits__list">
-                <li class="benefits__list-item">
-                  <picture>
-                    <source type='image/webp' srcset='img/benefits/small-planet.webp'>
-                    <img width='24' height='24' src='img/benefits/small-planet.png' alt=''>
-                  </picture>
-                  <div class="benefits__list-descr">Сервера по всему миру</div>
+            <div class="devices__support tabs">
+              <ul class="devices__support-list">
+                <li class="devices__support-item tablinks" tabs-btn="ios">
+                  <button class="devices__support-btn">
+                    <svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#ios'></use>
+                    </svg>
+                    <span>iOS</span>
+                  </button>
                 </li>
-                <li class="benefits__list-item">
-                  <picture>
-                    <source type='image/webp' srcset='img/benefits/phone.webp'>
-                    <img width='24' height='24' src='img/benefits/phone.png' alt=''>
-                  </picture>
-                  <div class="benefits__list-descr">Фильтр приложений</div>
+                <li class="devices__support-item tablinks active" tabs-btn="android">
+                  <button class="devices__support-btn">
+                    <svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#android'></use>
+                    </svg>
+                    <span>Android</span>
+                  </button>
                 </li>
-                <li class="benefits__list-item">
-                  <picture>
-                    <source type='image/webp' srcset='img/benefits/gear.webp'>
-                    <img width='24' height='24' src='img/benefits/gear.png' alt=''>
-                  </picture>
-                  <div class="benefits__list-descr">Гибкие настройки</div>
+                <li class="devices__support-item tablinks" tabs-btn="androidtv">
+                  <button class="devices__support-btn">
+                    <svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#android-tv'></use>
+                    </svg>
+                    <span>Android TV</span>
+                  </button>
                 </li>
-                <li class="benefits__list-item">
-                  <picture>
-                    <source type='image/webp' srcset='img/benefits/small-lightning.webp'>
-                    <img width='24' height='24' src='img/benefits/small-lightning.png' alt=''>
-                  </picture>
-                  <div class="benefits__list-descr">Быстрое подключение с <a href="#">Wireguard</a></div>
+              </ul>
+
+              <ul class="devices__content-list">
+                <li class="devices__content-item">
+                  <div class="devices__content tabcontent" tabs-content="ios">
+                    <div class="devices__content-info">
+                      <div class="devices__content-logo">
+                        <img width="135" height="33" src="./img/flexvpnwhite.svg" alt="">
+                      </div>
+
+                      <div class="devices__content-text text">
+                        <div class="subtitle">iOS</div>
+                        <p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet ut mattis
+                          ullamcorper montes, vestibulum lacinia curabitur bibendum mauris. In quis pretium, blandit
+                          egestas urna est, felis.</p>
+                      </div>
+
+                      <div class="devices__download">
+                        <div class="devices__content-article">Free app in store</div>
+
+                        <div class="devices__keys-download">
+                          <a class="market" href="#">
+                            <img width='84' height='23' src="../img/apple.svg" alt="Apple Store">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="devices__content-image">
+                      <picture>
+                        <source type='image/webp' srcset='img/devices/ios.webp'>
+                        <img width='442' height='475' src='img/devices/ios.png' alt=''>
+                      </picture>
+                    </div>
+                  </div>
                 </li>
-                <li class="benefits__list-item">
-                  <picture>
-                    <source type='image/webp' srcset='img/benefits/isp.webp'>
-                    <img width='24' height='24' src='img/benefits/ips.png' alt=''>
-                  </picture>
-                  <div class="benefits__list-descr">Обход ISP ограничений с <a href="#">Shadowsocks</a></div>
+
+                <li class="devices__content-item">
+                  <div class="devices__content tabcontent active" tabs-content="android">
+                    <div class="devices__content-info">
+                      <div class="devices__content-text text">
+                        <div class="subtitle">Android</div>
+                        <p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet ut mattis
+                          ullamcorper montes, vestibulum lacinia curabitur bibendum mauris. In quis pretium, blandit
+                          egestas urna est, felis.</p>
+                      </div>
+
+                      <div class="devices__download">
+                        <div class="devices__content-article">Free app in store</div>
+
+                        <div class="devices__keys-download">
+                          <a class="market" href="#">
+                            <img width='85' height='20' src="../img/google.svg" alt="Google Play">
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="devices__keys">
+                        <div class="devices__content-article">Ключ доступа для .apk</div>
+
+                        <div class="devices__keys-download">
+                          <a class="button__keys-download button" href="#">Download .apk</a>
+                          <a class="button__keys-buy button" href="/payment.html">Buy key</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="devices__content-image">
+                      <picture>
+                        <source type='image/webp' srcset='img/devices/android.webp'>
+                        <img width='409' height='361' src='img/devices/android.png' alt=''>
+                      </picture>
+                    </div>
+                  </div>
                 </li>
-                <li class="benefits__list-item">
-                  <picture>
-                    <source type='image/webp' srcset='img/benefits/save.webp'>
-                    <img width='24' height='24' src='img/benefits/save.png' alt=''>
-                  </picture>
-                  <div class="benefits__list-descr">Безопасное подключение с <a href="#">OpenVPN 2048 key</a></div>
+
+                <li class="devices__content-item">
+                  <div class="devices__content tabcontent" tabs-content="androidtv">
+                    <div class="devices__content-info">
+                      <div class="devices__content-text text">
+                        <div class="subtitle">Android TV</div>
+                        <p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet ut mattis
+                          ullamcorper montes, vestibulum lacinia curabitur bibendum mauris. In quis pretium, blandit
+                          egestas urna est, felis.</p>
+                      </div>
+
+                      <div class="devices__download">
+                        <div class="devices__content-article">Free app in store</div>
+
+                        <div class="devices__keys-download">
+                          <a class="market" href="#">
+                            <img width='85' height='20' src="../img/google.svg" alt="Google Play">
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="devices__keys">
+                        <div class="devices__content-article">Ключ доступа для .apk</div>
+
+                        <div class="devices__keys-download">
+                          <a class="button__keys-download button" href="#">Download .apk</a>
+                          <a class="button__keys-buy button" href="/payment.html">Buy key</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="devices__content-image">
+                      <picture>
+                        <source type='image/webp' srcset='img/devices/android-tv.webp'>
+                        <img width='344' height='468' src='img/devices/android-tv.png' alt=''>
+                      </picture>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
 
-      @include('partials/footer.html',{})
-      @include('partials/modals.html',{})
-    </div>
+      <section class="benefits">
+        <div class="container">
+          <div class="benefits__wrapp">
+            <div class="benefits__text text">
+              <h2 class="subtitle">Benefits VPN Local</h2>
+              <p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie aenean fermentum
+                ullamcorper at magna scelerisque proin.</p>
+            </div>
 
-    <script type="text/javascript" src="js/main.js"></script>
-  </body>
+            <ul class="benefits__list">
+              <li class="benefits__list-item">
+                <picture>
+                  <source type='image/webp' srcset='img/benefits/small-planet.webp'>
+                  <img width='24' height='24' src='img/benefits/small-planet.png' alt=''>
+                </picture>
+                <div class="benefits__list-descr">Сервера по всему миру</div>
+              </li>
+              <li class="benefits__list-item">
+                <picture>
+                  <source type='image/webp' srcset='img/benefits/phone.webp'>
+                  <img width='24' height='24' src='img/benefits/phone.png' alt=''>
+                </picture>
+                <div class="benefits__list-descr">Фильтр приложений</div>
+              </li>
+              <li class="benefits__list-item">
+                <picture>
+                  <source type='image/webp' srcset='img/benefits/gear.webp'>
+                  <img width='24' height='24' src='img/benefits/gear.png' alt=''>
+                </picture>
+                <div class="benefits__list-descr">Гибкие настройки</div>
+              </li>
+              <li class="benefits__list-item">
+                <picture>
+                  <source type='image/webp' srcset='img/benefits/small-lightning.webp'>
+                  <img width='24' height='24' src='img/benefits/small-lightning.png' alt=''>
+                </picture>
+                <div class="benefits__list-descr">Быстрое подключение с <a href="#">Wireguard</a></div>
+              </li>
+              <li class="benefits__list-item">
+                <picture>
+                  <source type='image/webp' srcset='img/benefits/isp.webp'>
+                  <img width='24' height='24' src='img/benefits/ips.png' alt=''>
+                </picture>
+                <div class="benefits__list-descr">Обход ISP ограничений с <a href="#">Shadowsocks</a></div>
+              </li>
+              <li class="benefits__list-item">
+                <picture>
+                  <source type='image/webp' srcset='img/benefits/save.webp'>
+                  <img width='24' height='24' src='img/benefits/save.png' alt=''>
+                </picture>
+                <div class="benefits__list-descr">Безопасное подключение с <a href="#">OpenVPN 2048 key</a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @include('partials/footer.html',{})
+    @include('partials/modals.html',{})
+  </div>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
 
 </html>
-
-

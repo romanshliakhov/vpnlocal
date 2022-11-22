@@ -1,9 +1,12 @@
 .access {
   padding: 65px 0 113px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  grid-gap: 65px;
+
+  &__wrapp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 65px;
+  }
 
   &__text {
     max-width: 577px;
@@ -12,5 +15,58 @@
 
   &__descr {
     color: var(--color-gray);
+  }
+
+  &__hexagon {
+    display: flex;
+    grid-gap: 32px;
+  }
+
+  &__hexagon-block {
+    --current-gap: clamp(5px, 0.694vw, 10px);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: var(--current-gap);
+
+    &:first-child {
+      .access__item:nth-last-of-type(-n+2) {
+        transform: translate(calc(50% + (var(--current-gap)/2)), -25%);
+      }
+
+      @media (max-width: 576px) {
+        --current-gap: 15px;
+        transform: rotate(-60deg) translate(-32%, 29%);
+        transform-origin: top;
+
+        img {
+          transform: rotate(60deg);
+        }
+      }
+    }
+
+    &:last-child {
+      .access__item:nth-last-of-type(-n+2) {
+        transform: translate(calc(50% + (var(--current-gap)/2)), -25%);
+      }
+
+      @media (max-width: 576px) {
+        --current-gap: 15px;
+        transform: rotate(60deg) translate(32%, 29%);
+        transform-origin: top;
+
+        img {
+          transform: rotate(-60deg);
+        }
+      }
+    }
+  }
+
+  &__item-content {
+    height: clamp(109px ,10.694vw, 154px);
+    width: clamp(96px, 9.444vw, 136px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
