@@ -1,5 +1,5 @@
 .security {
-  padding: clamp(116px, 14.648vw, 150px) 0 75px;
+  padding: clamp(116px, 14.648vw, 150px) 0 clamp(65px, 13.021vw, 75px);
   background-color: var(--color-black);
 
   &__wrapp {
@@ -11,6 +11,10 @@
     @media (max-width: 1024px) {
       flex-direction: column;
       align-items: center;
+    }
+
+    @media (max-width: 769px) {
+      grid-gap: 30px;
     }
   }
 
@@ -61,6 +65,14 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
+
+    @media (max-width: 769px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 576px) {
+      grid-template-columns: 100%;
+    }
   }
 
   &__details-item {
@@ -70,6 +82,10 @@
     padding: 20px;
     background-color: #141518;
     border-radius: 10px;
+
+    @media (max-width: 576px) {
+      grid-gap: 25px;
+    }
   }
 
   &__details-image {
@@ -87,6 +103,10 @@
 
     span {
       color: #4BE8C5;
+    }
+
+    @media (max-width: 576px) {
+      min-height: auto;
     }
   }
 }

@@ -62,6 +62,12 @@
 .descr {
   font-size: 15px;
   line-height: 148%;
+
+  @media (max-width: 576px) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .map__countries-text {
@@ -139,8 +145,8 @@
 }
 
 .plans__price-current {
-  font-size: 32px;
-  line-height: 39px;
+  font-size: clamp(24px, 32px, 32px);
+  line-height: clamp(29px, 39px, 39px);
   font-weight: 600;
 }
 
@@ -281,6 +287,7 @@
 
 .title {
   font-size: 70px;
+  font-size: clamp(60px, 12.153vw, 70px);
   line-height: 85.4%;
   font-weight: 700;
 }
@@ -397,8 +404,12 @@
 
 .payment__activation-code {
   font-size: 60px;
-  line-height: 72px;
+  line-height: 120%;
   font-weight: 300;
+
+  @media (max-width: 576px) {
+    font-size: 50px;
+  }
 }
 
 .payment__period {

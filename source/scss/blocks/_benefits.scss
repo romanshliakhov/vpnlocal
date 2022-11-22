@@ -52,7 +52,10 @@
       &:nth-child(3) {
         order: 3;
       }
+    }
 
+    @media (max-width: 576px) {
+      width: 100%;
     }
   }
 

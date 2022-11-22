@@ -25,6 +25,7 @@
     background-color: #fff;
 
     @media (max-width: 1024px) {
+      border-radius: 10px;
       justify-content: space-between;
     }
 
@@ -49,6 +50,11 @@
     display: flex;
     flex-direction: column;
     grid-gap: 18px;
+
+
+    @media (max-width: 576px) {
+      padding: 30px;
+    }
   }
 
   &__item-image {
@@ -61,6 +67,10 @@
     picture,
     img {
       height: 333px;
+    }
+
+    @media (max-width: 576px) {
+      display: none;
     }
   }
 

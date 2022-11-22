@@ -3,7 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  padding-top: 80px;
+  padding-top: clamp(40px, 13.889vw, 80px);
 
   &__wrapp {
     display: flex;
@@ -24,10 +24,14 @@
 
   &__plans {
     margin-bottom: -28px;
+
+    @media (max-width: 576px) {
+      margin-bottom: -70%;
+    }
   }
 
   &__keys {
-    padding: clamp(95px, 14.113vw, 140px) 0 95px;
+    padding: clamp(95px, 14.113vw, 140px) 0 clamp(60px, 16.493vw, 95px);
   }
 
   &__keys-wrapp {

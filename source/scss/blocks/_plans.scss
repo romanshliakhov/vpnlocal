@@ -1,15 +1,21 @@
 .plans {
-  width: fit-content;
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 630px;
+  width: 100%;
   align-items: center;
   background-color: var(--color-white);
   box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   z-index: 1;
 
+  @media (max-width: 576px) {
+    grid-template-columns: 100%;
+  }
+
   &__list {
-    padding: 14px 58px 16px;
+    padding: 14px 0 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,16 +25,39 @@
     &:last-child {
       border: none;
     }
+
+    @media (max-width: 769px) {
+      padding: 14px 0 16px;
+    }
+
+    @media (max-width: 576px) {
+      display: grid;
+      grid-template-columns: 110px auto;
+      justify-content: space-between;
+      padding: 19px 16px 11px 24px;
+      border-right: none;
+      border-bottom: 1px solid #EDF3FB;
+    }
   }
 
   &__season {
     margin-bottom: 6px;
+
+    @media (max-width: 576px) {
+      grid-row: 1;
+      margin-bottom: 0;
+    }
   }
 
   &__price {
     position: relative;
     min-height: 65px;
     margin-bottom: 12px;
+
+    @media (max-width: 576px) {
+      grid-row: 2;
+      margin-bottom: 0;
+    }
   }
 
   &__price-default {
@@ -57,6 +86,11 @@
 
     &:hover {
       background-color: rgba(68, 103, 251, 0.8);
+    }
+
+    @media (max-width: 576px) {
+      grid-column: 2;
+      grid-row: span 2;
     }
   }
 }

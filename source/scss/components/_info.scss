@@ -17,10 +17,16 @@
   }
 
   &__lists {
-    margin-bottom: 45px;
+    margin-bottom: clamp(30px, 7.813vw, 45px);
     display: flex;
     align-items: center;
     grid-gap: 40px;
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+      align-items: flex-start;
+      grid-gap: 12px;
+    }
   }
 
   &__list {
@@ -42,6 +48,16 @@
       background-image: var(--info-list);
       width: 13px;
       height: 10px;
+    }
+
+    @media (max-width: 576px) {
+      white-space: nowrap;
+    }
+  }
+
+  &__scan {
+    @media (max-width: 576px) {
+      display: none;
     }
   }
 }

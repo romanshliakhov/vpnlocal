@@ -27,6 +27,10 @@
     align-items: start;
     grid-gap: 10px 22px;
     padding: 16px 24px 54px;
+
+    @media (max-width: 769px) {
+      grid-template-columns: 100%;
+    }
   }
 
   &__item {
@@ -43,6 +47,11 @@
 
     &:hover {
       border: 1px solid #000000;
+    }
+
+    @media (max-width: 769px) {
+      max-width: 100%;
+      padding: 10px;
     }
   }
 
@@ -70,6 +79,11 @@
   &__item-details {
     max-width: 277px;
     margin-top: 17px;
+
+    @media (max-width: 769px) {
+      max-width: 100%;
+      padding-left: 55px;
+    }
 
     p {
       padding-bottom: 10px;

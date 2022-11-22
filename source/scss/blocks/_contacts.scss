@@ -1,16 +1,19 @@
 .contacts {
   flex-grow: 1;
-  padding: 25px 0 65px;
+  padding: 25px 16px 65px;
   background-color: var(--color-alice-blue);
 
   &__inner {
     margin: 0 auto;
     width: fit-content;
-    // height: 635px;
     padding: 25px 35px 20px;
     background-color: var(--color-white);
     border: 1px solid #D9D9D9;
     border-radius: 10px;
+
+    @media (max-width: 576px) {
+      padding: 25px 16px;
+    }
   }
 
   &__text {
