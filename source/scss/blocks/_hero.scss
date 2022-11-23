@@ -9,6 +9,13 @@
     top: -30px;
     right: -20%;
     z-index: -1;
+
+    @media (max-width: 1024px) {
+      right: initial;
+      left: -20%;
+      width: 200%;
+      height: initial;
+    }
   }
 
   &__text {
