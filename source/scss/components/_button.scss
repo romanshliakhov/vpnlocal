@@ -3,7 +3,6 @@
   border-radius: 32px;
   transition: all 0.4s ease;
 
-
   &__buy,
   &__activate,
   &__success {
@@ -38,6 +37,10 @@
     &--footer {
       color: var(--color-white);
     }
+  }
+
+  &__account {
+    white-space: nowrap;
   }
 
   &__contacts {
