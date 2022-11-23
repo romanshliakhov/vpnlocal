@@ -132,6 +132,15 @@ input[type="number"] {
 
 .body-scroll {
   overflow-y: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 }
 
 .wrapper {

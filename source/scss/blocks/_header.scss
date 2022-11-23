@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+
   &__location {
     padding: 13px 0;
     background-color: var(--color-black);
@@ -45,8 +47,10 @@
   }
 
   &__logo {
+    position: relative;
     display: flex;
     padding: 16px;
+    z-index: 50;
   }
 
   &__navigation-link {
