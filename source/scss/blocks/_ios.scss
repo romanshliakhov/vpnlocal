@@ -228,9 +228,16 @@
     }
   }
 
+  &__benefits-details {
+    background-color: var(--color-blue);
+    padding: 40px 0 50px;
+  }
+
   &__image-bg {
-    position: absolute;
-    right: 30px;
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+    // right: 30px;
 
     @media (max-width: 1440px) {
       right: -30px;

@@ -285,7 +285,9 @@
     transform: translateY(-50%);
 
     @media (max-width: 576px) {
-      display: none;
+      top: 6px;
+      right: 6px;
+      transform: initial;
     }
   }
 
