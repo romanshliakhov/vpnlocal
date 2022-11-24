@@ -101,8 +101,35 @@
     grid-gap: 7px;
   }
 
+  &__content {
+    height: 465px;
+    width: 100%;
+    overflow: hidden;
+    grid-template-columns: 352px auto;
+    grid-gap: 30px;
+
+    @media (max-width: 992px) {
+      grid-gap: 0;
+    }
+
+    @media (max-width: 576px) {
+      height: auto;
+    }
+  }
+
   &__content-image {
     display: flex;
+    width: 451px;
+
+    picture,
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    @media (max-width: 992px) {
+      width: 370px;
+    }
 
     @media (max-width: 576px) {
       display: none;

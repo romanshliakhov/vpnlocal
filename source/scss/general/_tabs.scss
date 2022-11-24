@@ -6,8 +6,6 @@
   display: none;
 
   &.active {
-      display: flex;
-      align-items: flex-start;
-      grid-gap: 30px;
+    display: grid;
   }
 }
