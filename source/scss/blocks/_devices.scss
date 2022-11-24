@@ -109,6 +109,7 @@
     grid-gap: 30px;
 
     @media (max-width: 992px) {
+      grid-template-columns: 315px auto;
       grid-gap: 0;
     }
 
