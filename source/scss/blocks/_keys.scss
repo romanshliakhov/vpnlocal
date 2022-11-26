@@ -177,6 +177,10 @@
         fill: var(--color-white);
       }
     }
+
+    @media (max-width: 576px) {
+      display: none;
+    }
   }
 
   &__btn {

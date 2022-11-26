@@ -73,6 +73,26 @@
         fill: var(--color-black);
       }
     }
+
+    &.active {
+      position: relative;
+      color: var(--color-white);
+      background-color: var(--color-blue);
+
+      svg {
+        fill: var(--color-white);
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 100%;
+        height: 1px;
+        background-color: var(--color-blue);
+      }
+    }
   }
 
   &__btns {
