@@ -2,8 +2,12 @@
   max-width: 530px;
   width: 100%;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 576px) {
     width: 90vw;
+  }
+
+  .modal__wrapper {
+    width: initial;
   }
 
   &__search {
